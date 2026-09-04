@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/fs_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:padding="12dp" />
+
+    <ProgressBar
+        android:id="@+id/fs_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/fs_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Primary"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/fs_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Secondary"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <!-- Sl No -->
+
+    <EditText
+        android:id="@+id/slNo"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_weight="0.8"
+        android:background="@android:drawable/editbox_background"
+        android:gravity="center"
+        android:hint="Sl"
+        android:inputType="number"
+        android:maxLines="1"
+        android:padding="4dp"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        android:textSize="16sp" />
+
+    <!-- Weight -->
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1.4"
+        android:background="@android:drawable/editbox_background"
+        android:gravity="center"
+        android:hint="Weight"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:padding="4dp"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        android:textSize="16sp" />
+
+    <!-- Total -->
+
+    <TextView
+        android:id="@+id/totalprice"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1.8"
+        android:background="@android:drawable/editbox_background"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="4dp"
+        android:text="Total"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <!-- Three dots -->
+
+    <ImageButton
+        android:id="@+id/more"
+        android:layout_width="48dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="4dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="More options"
+        android:src="@android:drawable/ic_menu_more" />
+
+    <!-- Plus -->
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="52dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="4dp"
+        android:padding="0dp"
+        android:text="+"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+</LinearLayout>
