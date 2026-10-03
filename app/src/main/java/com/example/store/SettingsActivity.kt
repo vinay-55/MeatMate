@@ -6,6 +6,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.store.backup.BackupActivity
 import com.example.store.backup.ProfileActivity
+import com.example.store.compliance.BusinessComplianceActivity
 
 class SettingsActivity : AppCompatActivity() {
 
@@ -19,6 +20,10 @@ class SettingsActivity : AppCompatActivity() {
 
         findViewById<View>(R.id.backup_item).setOnClickListener {
             startActivity(Intent(this, BackupActivity::class.java))
+        }
+
+        findViewById<View>(R.id.business_compliance_item).setOnClickListener {
+            startActivity(Intent(this, BusinessComplianceActivity::class.java))
         }
     }
 }
