@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="?android:attr/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="32dp">
+
+        <!-- ================= LICENSE ================= -->
+
+        <TextView
+            android:id="@+id/licenseQuestionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Do you currently have a valid license?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/licenseStatusRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbLicenseHave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I have a license" />
+
+            <RadioButton
+                android:id="@+id/rbLicenseNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I don't have a license" />
+
+            <RadioButton
+                android:id="@+id/rbLicenseUnknown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I don't know" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/saveLicenseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Save License Information"
+            android:textAllCaps="false" />
+
+        <!-- ================= FSSAI ================= -->
+
+        <TextView
+            android:id="@+id/fssaiQuestionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Do you currently have a valid FSSAI registration/license?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/fssaiStatusRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbFssaiHave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I have FSSAI" />
+
+            <RadioButton
+                android:id="@+id/rbFssaiNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I don't have FSSAI" />
+
+            <RadioButton
+                android:id="@+id/rbFssaiUnknown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I don't know" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/fssaiDetailsSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/fssaiNumberEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="FSSAI number (optional)"
+                android:inputType="textCapCharacters" />
+
+            <EditText
+                android:id="@+id/fssaiTypeEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="FSSAI type/category (optional)"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/fssaiExpiryEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Validity / expiry date (optional)"
+                android:inputType="date" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fssaiRequirementsSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="What type of chicken/meat business do you operate?"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/fssaiBusinessTypeRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbFssaiRetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Retail sale of chicken/meat" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiSlaughter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Slaughter/dressing chicken at the premises" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiProcessing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Processing/marinating/other preparation" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiWholesale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wholesale/supply" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiMultiple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="More than one" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiBusinessUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Approximate annual turnover"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/fssaiTurnoverRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbFssaiTurnover1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Up to ₹1.5 crore" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiTurnover2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Above ₹1.5 crore to ₹50 crore" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiTurnover3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Above ₹50 crore" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiTurnoverUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Is suitable potable water available for food handling and cleaning?"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/fssaiWaterRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbFssaiWaterYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiWaterNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiWaterUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Are food-contact/work surfaces suitable, cleanable and hygienically maintained?"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/fssaiSurfaceRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbFssaiSurfaceYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiSurfaceNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiSurfaceUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Are floors/walls and relevant premises surfaces suitably cleanable and maintained?"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/fssaiFloorRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbFssaiFloorYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiFloorNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiFloorUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Is proper meat-waste handling/disposal available?"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/fssaiWasteRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbFssaiWasteYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiWasteNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiWasteUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Is suitable drainage/wastewater management available?"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/fssaiDrainageRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbFssaiDrainageYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiDrainageNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiDrainageUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Is the premises protected against pests/insects and contamination?"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/fssaiPestRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbFssaiPestYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiPestNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiPestUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="If slaughtering/dressing is done at the premises, is the operation arranged hygienically and appropriately?"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/fssaiSlaughterRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbFssaiSlaughterYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiSlaughterNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiSlaughterUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiSlaughterN_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Not applicable" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Are meat handling, cleaning and storage areas appropriately arranged to prevent contamination?"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/fssaiStorageRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbFssaiStorageYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiStorageNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiStorageUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Is any applicable local-body/NOC requirement already complied with?"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/fssaiNocRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbFssaiNocYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes/available" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiNocNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No/not available" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiNocUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+                <RadioButton
+                    android:id="@+id/rbFssaiNocNa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Not applicable/if appropriate" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/saveFssaiButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Save FSSAI Information"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <!-- ================= BUSINESS INFORMATION ================= -->
+
+        <LinearLayout
+            android:id="@+id/businessInfoSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Store location"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/enterAutoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Enter Automatically"
+                android:textAllCaps="false" />
+
+            <EditText
+                android:id="@+id/storeLocationEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="top"
+                android:hint="Full store location"
+                android:inputType="textCapSentences|textMultiLine"
+                android:minLines="2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Area comes under" />
+
+            <RadioGroup
+                android:id="@+id/areaRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbAreaPanchayat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gram Panchayat" />
+
+                <RadioButton
+                    android:id="@+id/rbAreaMunicipality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Municipality" />
+
+                <RadioButton
+                    android:id="@+id/rbAreaUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Road width" />
+
+            <RadioGroup
+                android:id="@+id/roadRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbRoadGreater"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Greater than 40 ft" />
+
+                <RadioButton
+                    android:id="@+id/rbRoadLess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Less than 40 ft" />
+
+                <RadioButton
+                    android:id="@+id/rbRoadUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Temple zone" />
+
+            <RadioGroup
+                android:id="@+id/templeRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbTempleYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="There is a temple within 50 m" />
+
+                <RadioButton
+                    android:id="@+id/rbTempleNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="There is no temple within 50 m" />
+
+                <RadioButton
+                    android:id="@+id/rbTempleUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="School zone" />
+
+            <RadioGroup
+                android:id="@+id/schoolRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbSchoolYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="There is a school within 100 m" />
+
+                <RadioButton
+                    android:id="@+id/rbSchoolNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="There is no school within 100 m" />
+
+                <RadioButton
+                    android:id="@+id/rbSchoolUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Khata status" />
+
+            <RadioGroup
+                android:id="@+id/khataRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbKhataA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A-Khata" />
+
+                <RadioButton
+                    android:id="@+id/rbKhataB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B-Khata" />
+
+                <RadioButton
+                    android:id="@+id/rbKhataNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No Khata" />
+
+                <RadioButton
+                    android:id="@+id/rbKhataUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Neighbor NOC" />
+
+            <RadioGroup
+                android:id="@+id/neighborNocRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbNeighborYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Available" />
+
+                <RadioButton
+                    android:id="@+id/rbNeighborNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Not available" />
+
+                <RadioButton
+                    android:id="@+id/rbNeighborUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Glazed tiles up to 6 ft" />
+
+            <RadioGroup
+                android:id="@+id/glazedTilesRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbGlazedYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Available as required" />
+
+                <RadioButton
+                    android:id="@+id/rbGlazedNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Not available" />
+
+                <RadioButton
+                    android:id="@+id/rbGlazedUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Grease trap" />
+
+            <RadioGroup
+                android:id="@+id/greaseTrapRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbGreaseYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Available" />
+
+                <RadioButton
+                    android:id="@+id/rbGreaseNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Not available" />
+
+                <RadioButton
+                    android:id="@+id/rbGreaseUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Black glass door/screening" />
+
+            <RadioGroup
+                android:id="@+id/blackGlassRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbBlackGlassYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Available" />
+
+                <RadioButton
+                    android:id="@+id/rbBlackGlassNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Not available" />
+
+                <RadioButton
+                    android:id="@+id/rbBlackGlassUnknown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I don't know" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/saveStoreButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:enabled="false"
+                android:text="Save Business Information"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
