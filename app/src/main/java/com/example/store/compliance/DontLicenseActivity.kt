@@ -20,13 +20,15 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
+import com.example.store.BaseActivity
+import com.example.store.LocaleHelper
 import com.example.store.R
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.util.Locale
 
-class DontLicenseActivity : AppCompatActivity() {
+class DontLicenseActivity : BaseActivity() {
 
     private lateinit var enterAutoButton: Button
     private lateinit var storeLocationEdit: EditText
@@ -100,11 +102,11 @@ class DontLicenseActivity : AppCompatActivity() {
                 requestCurrentLocation()
             } else {
                 enterAutoButton.isEnabled = true
-                enterAutoButton.text = "Enter Automatically"
+                enterAutoButton.text = getString(R.string.enter_automatically)
 
                 Toast.makeText(
                     this,
-                    "Location permission is required.",
+                    getString(R.string.location_permission_required),
                     Toast.LENGTH_SHORT
                 ).show()
             }
@@ -113,6 +115,9 @@ class DontLicenseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dont_license)
+
+        findViewById<android.widget.TextView>(R.id.complianceDisclaimerText)?.text =
+            LocaleHelper.wrapContext(this).getString(R.string.compliance_ai_disclaimer)
 
         enterAutoButton = findViewById(R.id.enterAutoButton)
         storeLocationEdit = findViewById(R.id.storeLocationEdit)
@@ -975,7 +980,7 @@ class DontLicenseActivity : AppCompatActivity() {
         if (selectedStatus.isEmpty()) {
             Toast.makeText(
                 this,
-                "Please select a license status.",
+                getString(R.string.prompt_select_license_status),
                 Toast.LENGTH_SHORT
             ).show()
             return
@@ -987,7 +992,7 @@ class DontLicenseActivity : AppCompatActivity() {
 
         Toast.makeText(
             this,
-            "License information saved.",
+            getString(R.string.license_info_saved),
             Toast.LENGTH_SHORT
         ).show()
     }
@@ -999,7 +1004,7 @@ class DontLicenseActivity : AppCompatActivity() {
         if (selectedStatus.isEmpty()) {
             Toast.makeText(
                 this,
-                "Please select an FSSAI status.",
+                getString(R.string.prompt_select_fssai_status),
                 Toast.LENGTH_SHORT
             ).show()
             return
@@ -1011,7 +1016,7 @@ class DontLicenseActivity : AppCompatActivity() {
         ) {
             Toast.makeText(
                 this,
-                "Please complete all FSSAI information.",
+                getString(R.string.prompt_complete_fssai_info),
                 Toast.LENGTH_SHORT
             ).show()
 
@@ -1065,7 +1070,7 @@ class DontLicenseActivity : AppCompatActivity() {
 
         Toast.makeText(
             this,
-            "FSSAI information saved.",
+            getString(R.string.fssai_info_saved),
             Toast.LENGTH_SHORT
         ).show()
     }
@@ -1259,7 +1264,7 @@ class DontLicenseActivity : AppCompatActivity() {
         if (licenseStatus.isEmpty()) {
             Toast.makeText(
                 this,
-                "Please select a license status first.",
+                getString(R.string.prompt_select_license_status),
                 Toast.LENGTH_SHORT
             ).show()
             return
@@ -1275,7 +1280,7 @@ class DontLicenseActivity : AppCompatActivity() {
         if (licenseStatus != "I don't have a license") {
             Toast.makeText(
                 this,
-                "Business information saved.",
+                getString(R.string.business_info_saved),
                 Toast.LENGTH_SHORT
             ).show()
             return
@@ -1399,7 +1404,7 @@ class DontLicenseActivity : AppCompatActivity() {
         ) {
             Toast.makeText(
                 this,
-                "Please complete all business information.",
+                getString(R.string.prompt_complete_business_info),
                 Toast.LENGTH_SHORT
             ).show()
 
@@ -1422,7 +1427,7 @@ class DontLicenseActivity : AppCompatActivity() {
 
         Toast.makeText(
             this,
-            "Business information saved.",
+            getString(R.string.business_info_saved),
             Toast.LENGTH_SHORT
         ).show()
     }
@@ -1533,11 +1538,11 @@ class DontLicenseActivity : AppCompatActivity() {
             pendingLocationListener = null
 
             enterAutoButton.isEnabled = true
-            enterAutoButton.text = "Enter Automatically"
+            enterAutoButton.text = getString(R.string.enter_automatically)
 
             Toast.makeText(
                 this,
-                "Could not get your current location.",
+                getString(R.string.unable_to_get_location),
                 Toast.LENGTH_SHORT
             ).show()
         }
@@ -1650,7 +1655,7 @@ class DontLicenseActivity : AppCompatActivity() {
             updateSaveButtons()
 
             enterAutoButton.isEnabled = true
-            enterAutoButton.text = "Enter Automatically"
+            enterAutoButton.text = getString(R.string.enter_automatically)
 
             Toast.makeText(
                 this@DontLicenseActivity,
