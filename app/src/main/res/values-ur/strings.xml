@@ -1,0 +1,280 @@
+<resources>
+    <string name="app_name">MeatMate</string>
+    <string name="store_management">دکان کا انتظام</string>
+    <string name="welcome_to_meatmate">میٹ میٹ میں خوش آمدید</string>
+    <string name="select_product">ایک پروڈکٹ منتخب کریں</string>
+    <string name="add_product">پروڈکٹ شامل کریں</string>
+    <string name="add_new_product">نئی پروڈکٹ شامل کریں</string>
+    <string name="choose_product_type">پروڈکٹ کی قسم منتخب کریں</string>
+    <string name="product_type_normal">عام پروڈکٹ (1 سیکشن)</string>
+    <string name="product_type_two_section">ریڈی چکن جیسی پروڈکٹ (2 سیکشن)</string>
+    <string name="product_name_label">پروڈکٹ کا نام</string>
+    <string name="product_name_hint">مثلاً: مٹن، دیسی مرغ</string>
+    <string name="cancel">منسوخ کریں</string>
+    <string name="remove">حذف کریں</string>
+    <string name="remove_product">پروڈکٹ حذف کریں</string>
+    <string name="remove_product_title">پروڈکٹ حذف کریں؟</string>
+    <string name="remove_product_message">کیا آپ واقعی ہوم اسکرین سے \"%1$s\" کو ہٹانا چاہتے ہیں؟\n\nتمام پچھلے ریکارڈز پچھلے ڈیٹا میں مکمل محفوظ رہیں گے۔</string>
+    <string name="default_product_cannot_remove">ڈیفالٹ مستقل پروڈکٹس کو ہٹایا نہیں جا سکتا۔</string>
+    <string name="product_removed_format">\"%1$s\" کو فعال پروڈکٹس سے ہٹا دیا گیا ہے۔</string>
+    <string name="product_remove_failed">پروڈکٹ ہٹانے میں ناکامی۔</string>
+    <string name="product_added_format">\"%1$s\" شامل کر دی گئی</string>
+    <string name="failed_add_product">پروڈکٹ شامل کرنے میں ناکامی</string>
+    <string name="error_product_name_empty">پروڈکٹ کا نام خالی نہیں ہو سکتا۔</string>
+    <string name="error_product_exists_format">\"%1$s\" نام کی ایک فعال پروڈکٹ پہلے سے موجود ہے۔</string>
+
+    <!-- Options Menu -->
+    <string name="action_backup">ڈرائیو میں بیک اپ لیں</string>
+    <string name="action_restore">ڈرائیو سے بحال کریں</string>
+
+    <!-- First Setup / Onboarding -->
+    <string name="welcome">خوش آمدید</string>
+    <string name="terms_and_privacy_title">شرائط اور رازداری</string>
+    <string name="terms_privacy_consent">جاری رکھ کر، آپ شرائط و ضوابط سے اتفاق کرتے ہیں اور رازداری کی پالیسی کو تسلیم کرتے ہیں۔</string>
+    <string name="terms_and_conditions">شرائط و ضوابط</string>
+    <string name="privacy_policy">رازداری کی پالیسی</string>
+    <string name="accept">قبول کریں</string>
+    <string name="decline">مسترد کریں</string>
+    <string name="continue_button">جاری رکھیں</string>
+    <string name="apply_button">لاگو کریں</string>
+    <string name="do_you_have_previous_data">کیا آپ کے پاس پچھلا ڈیٹا موجود ہے؟</string>
+    <string name="restore_previous_data">پچھلا ڈیٹا بحال کریں</string>
+    <string name="im_a_new_user">میں نیا صارف ہوں</string>
+    <string name="protect_your_data_title">اپنے کاروباری ڈیٹا کی حفاظت کریں</string>
+    <string name="protect_your_data_message">اپنے موجودہ مقامی ڈیٹا کو کلاؤڈ پر محفوظ کرنے کے لیے Google سے سائن ان کریں۔ آپ کا مقامی ڈیٹا تبدیل نہیں ہوگا۔</string>
+    <string name="sign_in_and_backup">سائن ان کریں اور بیک اپ لیں</string>
+    <string name="maybe_later">شاید بعد میں</string>
+    <string name="initial_backup_completed">ابتدائی بیک اپ مکمل ہو گیا</string>
+    <string name="backup_failed_format">بیک اپ ناکام: %1$s</string>
+    <string name="restore_success_format">بحال شدہ: %1$d ریکارڈز (چھوڑے گئے: %2$d)</string>
+    <string name="no_previous_backup_found">کوئی پچھلا بیک اپ نہیں ملا</string>
+    <string name="restore_failed_format">بحالی ناکام: %1$s</string>
+    <string name="unable_to_check_local_data">مقامی ڈیٹا کی تصدیق نہیں ہو سکی: %1$s</string>
+    <string name="unable_to_check_backup_status">بیک اپ کی حالت معلوم نہیں ہو سکی</string>
+    <string name="unable_to_check_backup_message">Google Drive پر پچھلا بیک اپ ڈیٹا چیک نہیں کیا جا سکا۔\n\nتفصیلات: %1$s\n\nبراہ کرم انٹرنیٹ کنکشن چیک کریں اور دوبارہ کوشش کریں۔</string>
+    <string name="retry">دوبارہ کوشش کریں</string>
+    <string name="previous_data_found_title">پچھلا ڈیٹا مل گیا!</string>
+    <string name="previous_data_found_message">اگر آپ نئے صارف کے طور پر شروع کرتے ہیں تو آپ کا پچھلا MeatMate کاروباری ڈیٹا مستقل طور پر حذف کر دیا جائے گا۔ اس کی تصدیق کے بعد آپ اس ڈیٹا کو بحال نہیں کر سکیں گے۔</string>
+    <string name="continue_with_restore">ڈیٹا بحال کرتے ہوئے جاری رکھیں</string>
+    <string name="delete_backup_and_start_new">بیک اپ حذف کریں اور نیا صارف شروع کریں</string>
+    <string name="final_confirmation_title">حتمی تصدیق</string>
+    <string name="final_confirmation_message">یہ عمل آپ کے پچھلے کاروباری ڈیٹا کو مکمل طور پر حذف کر دے گا۔ تصدیق کرنے کے لیے نیچے دیا گیا جملہ بعینہ درج کریں۔</string>
+    <string name="confirm_phrase_text">I am deleting my all data</string>
+    <string name="confirm_phrase_hint">یہاں بالکل وہی جملہ درج کریں</string>
+    <string name="confirm_and_start_new">تصدیق کریں اور نیا صارف شروع کریں</string>
+    <string name="phrase_mismatch_error">جملہ مطابقت نہیں رکھتا۔ براہ کرم درست جملہ درج کریں۔</string>
+    <string name="started_new_user">نیا صارف شروع کر دیا گیا</string>
+    <string name="could_not_start_new_user">نیا صارف شروع نہیں ہو سکا: %1$s</string>
+
+    <!-- Settings -->
+    <string name="settings_title">ترتیبات</string>
+    <string name="settings_profile">پروفائل</string>
+    <string name="settings_profile_desc">اکاؤنٹ اور Google سائن ان</string>
+    <string name="settings_backup">بیک اپ</string>
+    <string name="settings_backup_desc">بیک اپ کی ترتیبات</string>
+    <string name="settings_past_data">پچھلا ڈیٹا</string>
+    <string name="settings_past_data_desc">تاریخ کے لحاظ سے پچھلی فروخت اور ریکارڈ دیکھیں</string>
+    <string name="settings_business_compliance">کاروباری تعمیل</string>
+    <string name="settings_business_compliance_desc">کاروباری مقام اور ضروری ضوابط کی جانچ</string>
+    <string name="settings_language">زبان / Language</string>
+    <string name="settings_language_desc">ایپ کی ڈسپلے زبان تبدیل کریں</string>
+
+    <!-- Language Selection Screen -->
+    <string name="select_language_title">زبان منتخب کریں / Select Language</string>
+    <string name="select_language_subtitle">اپنی ترجیحی ڈسپلے زبان منتخب کریں</string>
+    <string name="lang_kannada">ಕನ್ನಡ (Kannada)</string>
+    <string name="lang_english">English</string>
+    <string name="lang_hindi">हिन्दी (Hindi)</string>
+    <string name="lang_tamil">தமிழ் (Tamil)</string>
+    <string name="lang_telugu">తెలుగు (Telugu)</string>
+    <string name="lang_urdu">اردو (Urdu)</string>
+    <string name="lang_kannada_translit">Kannada (English letters / Tooka, Bele...)</string>
+
+    <!-- Business Activity (Daily Entry) -->
+    <string name="enter_the_price">قیمت درج کریں</string>
+    <string name="sl_no">شمار</string>
+    <string name="weight">وزن</string>
+    <string name="total">کل</string>
+    <string name="total_weight_format">کل وزن: %s</string>
+    <string name="total_cash_format">کل رقم: %s</string>
+    <string name="total_weight_2_format">کل وزن 2: %s</string>
+    <string name="total_cash_2_format">کل رقم 2: %s</string>
+    <string name="delete">حذف کریں</string>
+    <string name="delete_row_title">کیا قطار حذف کریں؟</string>
+    <string name="delete_row_message">کیا آپ واقعی اس قطار کو حذف کرنا چاہتے ہیں؟</string>
+    <string name="yes">جی ہاں</string>
+    <string name="no">نہیں</string>
+
+    <!-- Calendar & Past Business -->
+    <string name="no_data_for_date">%1$s کے لیے کوئی ڈیٹا نہیں ہے</string>
+    <string name="no_data_for_product_on_date">%2$s پر %1$s کے لیے کوئی ڈیٹا نہیں ہے</string>
+    <string name="no_data">کوئی ڈیٹا نہیں</string>
+    <string name="price_format">قیمت: %s</string>
+    <string name="this_is_not_today_data">یہ آج کا ڈیٹا نہیں ہے</string>
+    <string name="date_header">تاریخ</string>
+    <string name="day_header">دن</string>
+    <string name="product_header">پروڈکٹ</string>
+
+    <!-- Backup Activity -->
+    <string name="backup_now">ابھی بیک اپ لیں</string>
+    <string name="data_to_backup_format">بیک اپ کے لیے ڈیٹا: %s</string>
+    <string name="data_to_backup_none">بیک اپ کے لیے ڈیٹا: -</string>
+    <string name="last_backup_format">آخری بیک اپ: %s</string>
+    <string name="last_backup_never">آخری بیک اپ: کبھی نہیں</string>
+    <string name="auto_backup">خودکار بیک اپ</string>
+    <string name="save_auto_backup_setting">خودکار بیک اپ سیٹنگ محفوظ کریں</string>
+    <string name="auto_backup_saved">خودکار بیک اپ سیٹنگ محفوظ ہو گئی</string>
+    <string name="not_signed_in">سائن ان نہیں ہیں</string>
+    <string name="backup_exists_title">بیک اپ پہلے سے موجود ہے</string>
+    <string name="backup_exists_message">Google Drive پر پہلے سے بیک اپ موجود ہے۔\n\nکیا آپ موجودہ ڈیٹا سے اسے تبدیل کرنا چاہتے ہیں؟</string>
+    <string name="replace">تبدیل کریں</string>
+    <string name="auto_backup_off">بند</string>
+    <string name="auto_backup_daily">روزانہ</string>
+    <string name="auto_backup_weekly">ہفتہ وار</string>
+    <string name="auto_backup_custom">کسٹم</string>
+
+    <!-- Profile Activity -->
+    <string name="profile">پروفائل</string>
+    <string name="sign_in_change_account">سائن ان کریں / اکاؤنٹ تبدیل کریں</string>
+
+    <!-- Add Information Activity (DontLicenseActivity) -->
+    <string name="add_info_title">معلومات شامل کریں</string>
+    <string name="valid_license_question">کیا آپ کے پاس فی الحال ایک درست لائسنس ہے؟</string>
+    <string name="license_have">میرے پاس لائسنس ہے</string>
+    <string name="license_no">میرے پاس لائسنس نہیں ہے</string>
+    <string name="license_unknown">مجھے معلوم نہیں</string>
+    <string name="save_license_info">لائسنس کی معلومات محفوظ کریں</string>
+
+    <string name="valid_fssai_question">کیا آپ کے پاس فی الحال درست FSSAI رجسٹریشن/لائسنس ہے؟</string>
+    <string name="fssai_have">میرے پاس FSSAI ہے</string>
+    <string name="fssai_no">میرے پاس FSSAI نہیں ہے</string>
+    <string name="fssai_unknown">مجھے معلوم نہیں</string>
+    <string name="fssai_number_hint">FSSAI نمبر (اختیاری)</string>
+    <string name="fssai_type_hint">FSSAI کی قسم/کیٹیگری (اختیاری)</string>
+    <string name="fssai_expiry_hint">میعاد / اختتام کی تاریخ (اختیاری)</string>
+
+    <string name="fssai_business_type_question">آپ کس قسم کا مرغی/گوشت کا کاروبار کرتے ہیں؟</string>
+    <string name="fssai_retail">مرغی/گوشت کی ریٹیل فروخت</string>
+    <string name="fssai_slaughter">دکان پر مرغی ذبح/ڈریسنگ کرنا</string>
+    <string name="fssai_processing">پروسیسنگ/میرینیٹنگ/دیگر تیاری</string>
+    <string name="fssai_wholesale">ہول سیل/سپلائی</string>
+    <string name="fssai_multiple">ایک سے زیادہ</string>
+
+    <string name="fssai_turnover_question">تخمینی سالانہ کاروبار (ٹرن اوور)</string>
+    <string name="fssai_turnover_1">₹1.5 کروڑ تک</string>
+    <string name="fssai_turnover_2">₹1.5 کروڑ سے ₹50 کروڑ تک</string>
+    <string name="fssai_turnover_3">₹50 کروڑ سے زیادہ</string>
+
+    <string name="fssai_water_question">کیا صفائی اور کھانے کے انتظام کے لیے مناسب پینے کا پانی دستیاب ہے؟</string>
+    <string name="fssai_surface_question">کیا کام کی جگہیں مناسب، صاف اور حفظان صحت کے مطابق ہیں؟</string>
+    <string name="fssai_floor_question">کیا فرش اور دیواریں صاف کرنے کے قابل اور درست حالت میں ہیں؟</string>
+    <string name="fssai_waste_question">کیا گوشت کے فضلے کے اخراج کا مناسب انتظام ہے؟</string>
+    <string name="fssai_drainage_question">کیا مناسب نکاسی آب/گندے پانی کا انتظام موجود ہے؟</string>
+    <string name="fssai_pest_question">کیا جگہ کیڑوں اور گندگی سے محفوظ ہے؟</string>
+    <string name="fssai_slaughter_operation_question">اگر ذبح دکان میں کی جاتی ہے تو کیا انتظام حفظان صحت کے مطابق ہے؟</string>
+    <string name="fssai_storage_question">کیا آلودگی روکنے کے لیے گوشت رکھنے اور اسٹوریج کے شعبے مناسب ہیں؟</string>
+    <string name="fssai_noc_question">کیا متعلقہ لوکل باڈی/NOC کے تقاضے پہلے سے پورے ہیں؟</string>
+    <string name="noc_yes_available">ہاں/دستیاب ہے</string>
+    <string name="noc_no_not_available">نہیں/دستیاب نہیں ہے</string>
+    <string name="noc_not_applicable">لاگو نہیں ہوتا/اگر مناسب ہو</string>
+    <string name="save_fssai_info">FSSAI معلومات محفوظ کریں</string>
+
+    <string name="store_location_title">دکان کا مقام</string>
+    <string name="enter_automatically">خود بخود درج کریں</string>
+    <string name="fetching_address">پتہ حاصل کیا جا رہا ہے...</string>
+    <string name="store_location_hint">دکان کا مکمل پتہ</string>
+    <string name="area_comes_under">علاقہ اس کے تحت آتا ہے</string>
+    <string name="gram_panchayat">گرام پنچایت</string>
+    <string name="municipality">میونسپلٹی</string>
+    <string name="road_width">سڑک کی چوڑائی</string>
+    <string name="greater_than_40_ft">40 فٹ سے زیادہ</string>
+    <string name="less_than_40_ft">40 فٹ سے کم</string>
+    <string name="temple_zone">مندر کا زون</string>
+    <string name="temple_within_50m">50 میٹر کے اندر مندر ہے</string>
+    <string name="no_temple_within_50m">50 میٹر کے اندر کوئی مندر نہیں ہے</string>
+    <string name="school_zone">اسکول زون</string>
+    <string name="school_within_100m">100 میٹر کے اندر اسکول ہے</string>
+    <string name="no_school_within_100m">100 میٹر کے اندر کوئی اسکول نہیں ہے</string>
+    <string name="khata_status">کھاتہ کی حیثیت</string>
+    <string name="khata_a">اے-کھاتہ</string>
+    <string name="khata_b">بی-کھاتہ</string>
+    <string name="khata_none">کوئی کھاتہ نہیں</string>
+    <string name="neighbor_noc">پڑوسی کی NOC</string>
+    <string name="available">دستیاب ہے</string>
+    <string name="not_available">دستیاب نہیں ہے</string>
+    <string name="glazed_tiles_label">6 فٹ تک چمکدار ٹائلیں</string>
+    <string name="available_as_required">ضرورت کے مطابق دستیاب</string>
+    <string name="grease_trap">گریس ٹریپ</string>
+    <string name="black_glass_label">سیاہ شیشے کا دروازہ/اسکریننگ</string>
+    <string name="save_business_information">کاروباری معلومات محفوظ کریں</string>
+
+    <string name="prompt_select_license_status">براہ کرم لائسنس کی حیثیت منتخب کریں۔</string>
+    <string name="license_info_saved">لائسنس کی معلومات محفوظ ہو گئیں۔</string>
+    <string name="prompt_select_fssai_status">براہ کرم FSSAI کی حیثیت منتخب کریں۔</string>
+    <string name="prompt_complete_fssai_info">براہ کرم FSSAI کی تمام معلومات مکمل کریں۔</string>
+    <string name="fssai_info_saved">FSSAI معلومات محفوظ ہو گئیں۔</string>
+    <string name="prompt_complete_business_info">براہ کرم کاروبار کی تمام معلومات مکمل کریں۔</string>
+    <string name="business_info_saved">کاروبار کی معلومات محفوظ ہو گئیں۔</string>
+    <string name="location_permission_required">مقام کی اجازت درکار ہے۔</string>
+    <string name="unable_to_get_location">موجودہ مقام حاصل نہیں ہو سکا۔</string>
+
+    <!-- Product Editing, Search & Safe Deletion -->
+    <string name="edit_product">پروڈکٹ میں ترمیم کریں</string>
+    <string name="edit_product_title">پروڈکٹ کا نام تبدیل کریں</string>
+    <string name="edit_product_name_hint">نیا پروڈکٹ نام درج کریں</string>
+    <string name="save">محفوظ کریں</string>
+    <string name="product_renamed_format">پروڈکٹ کا نام تبدیل کر کے \"%1$s\" کر دیا گیا</string>
+    <string name="failed_rename_product">پروڈکٹ کا نام تبدیل کرنے میں ناکامی</string>
+    <string name="search_products_hint">پروڈکٹس تلاش کریں...</string>
+    <string name="no_products_found">کوئی پروڈکٹ نہیں ملا</string>
+    <string name="delete_product">پروڈکٹ حذف کریں</string>
+    <string name="delete_product_title">پروڈکٹ حذف کریں؟</string>
+    <string name="delete_product_case_a_message">کیا آپ واقعی \"%1$s\" کو فعال پروڈکٹس سے ہٹانا چاہتے ہیں؟\n\nتمام پچھلے ریکارڈ محفوظ رہیں گے اور ماضی کے ڈیٹا میں دستیاب ہوں گے۔</string>
+    <string name="delete_product_case_b_message">انتباہ: \"%1$s\" کے لیے آج کے ریکارڈ موجود ہیں۔\n\nصرف اس پروڈکٹ کے آج کے ریکارڈ مستقل طور پر حذف کیے جائیں گے۔ ماضی کے تمام ریکارڈ مکمل طور پر محفوظ رہیں گے۔\n\nتصدیق کرنے کے لیے نیچے دیا گیا جملہ ہو بہو ٹائپ کریں:</string>
+    <string name="delete_confirm_phrase">I am deleting</string>
+    <string name="delete_confirm_phrase_hint">یہاں \"I am deleting\" ٹائپ کریں</string>
+    <string name="delete_phrase_mismatch">براہ کرم درست جملہ درج کریں: I am deleting</string>
+    <string name="deleting">حذف ہو رہا ہے...</string>
+    <string name="product_deleted_format">\"%1$s\" آج سے حذف ہو گیا اور آرکائیو ہو گیا۔</string>
+    <string name="no_data_for_selected_date">اس تاریخ کے لیے کوئی ریکارڈ نہیں ملا۔</string>
+    <string name="more_options">مزید اختیارات</string>
+
+    <!-- Feedback -->
+    <string name="settings_feedback">فیڈ بیک</string>
+    <string name="settings_feedback_desc">اپنی تجاویز یا مسائل شیئر کریں</string>
+    <string name="send_email">ای میل بھیجیں</string>
+    <string name="send_feedback">فیڈ بیک بھیجیں</string>
+    <string name="feedback_hint">اپنی تجویز شیئر کریں یا کسی مسئلے کی اطلاع دیں...</string>
+    <string name="feedback_empty_error">براہ کرم جمع کرانے سے پہلے اپنی رائے درج کریں۔</string>
+    <string name="feedback_submitting">فیڈ بیک بھیجا جا رہا ہے...</string>
+    <string name="feedback_success_title">فیڈ بیک بھیج دیا گیا</string>
+    <string name="feedback_success_message">شکریہ! آپ کا فیڈ بیک کامیابی سے بھیج دیا گیا ہے۔</string>
+    <string name="feedback_error_message">فیڈ بیک بھیجنے میں ناکامی۔ براہ کرم انٹرنیٹ چیک کریں اور دوبارہ کوشش کریں۔</string>
+    <string name="close">بند کریں</string>
+
+    <!-- Logout -->
+    <string name="logout">لاگ آؤٹ</string>
+    <string name="logout_warning_title">لاگ آؤٹ کریں؟</string>
+    <string name="logout_warning_message">لاگ آؤٹ کرنے سے اس ڈیوائس سے اس گوگل اکاؤنٹ سے وابستہ تمام مقامی ڈیٹا مستقل طور پر حذف ہو جائے گا، بشمول کاروباری ریکارڈز، محفوظ کردہ قیمتیں، پروڈکٹ کیٹلاگ ڈیٹا اور اکاؤنٹ کی ترتیبات۔ گوگل ڈرائیو پر بیک اپ نہ کیا گیا ڈیٹا مستقل طور پر ضائع ہو جائے گا۔ براہ کرم جاری رکھنے سے پہلے یقینی بنائیں کہ آپ کا تازہ ترین بیک اپ مکمل ہے۔</string>
+    <string name="logout_backup_and_logout">بیک اپ اور لاگ آؤٹ</string>
+    <string name="logout_anyway">پھر بھی لاگ آؤٹ کریں</string>
+    <string name="cleanup_failed_message">مقامی اکاؤنٹ کا ڈیٹا حذف نہیں ہو سکا۔ آپ کے ڈیٹا کے تحفظ کے لیے لاگ آؤٹ منسوخ کر دیا گیا ہے۔</string>
+    <string name="logout_dialog_title">لاگ آؤٹ کریں؟</string>
+    <string name="logout_dialog_message">کیا آپ واقعی لاگ آؤٹ کرنا چاہتے ہیں؟</string>
+    <string name="logout_confirm_backup_message">کیا آپ لاگ آؤٹ کرنے سے پہلے اپنے ڈیٹا کا بیک اپ لینا چاہتے ہیں؟</string>
+    <string name="logout_backup_data">ڈیٹا کا بیک اپ لیں</string>
+    <string name="skip">چھوڑیں</string>
+    <string name="backup_in_progress">ڈیٹا کا بیک اپ لیا جا رہا ہے...</string>
+
+    <!-- Compliance Disclaimer -->
+    <string name="compliance_ai_disclaimer">ہم اس فیچر پر کام کر رہے ہیں اور یہاں AI کو منسلک کرنے کا ارادہ رکھتے ہیں۔ براہ کرم یہ نہ سمجھیں کہ تمام معلومات درست ہیں۔</string>
+
+    <!-- PDF Download -->
+    <string name="download_pdf">پی ڈی ایف ڈاؤن لوڈ کریں</string>
+    <string name="pdf_generating">پی ڈی ایف بنائی جا رہی ہے…</string>
+    <string name="pdf_success">پی ڈی ایف کامیابی کے ساتھ محفوظ ہو گئی</string>
+    <string name="no_records_for_pdf">اس پروڈکٹ اور تاریخ کے لیے کوئی ریکارڈ نہیں ملا</string>
+    <string name="view_pdf">پی ڈی ایف دیکھیں</string>
+    <string name="share_pdf">پی ڈی ایف شیئر کریں</string>
+    <string name="pdf_saved_to">محفوظ کیا گیا: %1$s</string>
+</resources>

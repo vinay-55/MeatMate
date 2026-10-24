@@ -1,0 +1,280 @@
+<resources>
+    <string name="app_name">MeatMate</string>
+    <string name="store_management">கடை மேலாண்மை</string>
+    <string name="welcome_to_meatmate">மீட்மேட்டிற்கு நல்வரவு</string>
+    <string name="select_product">ஒரு தயாரிப்பைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="add_product">தயாரிப்பைச் சேர்க்கவும்</string>
+    <string name="add_new_product">புதிய தயாரிப்பைச் சேர்க்கவும்</string>
+    <string name="choose_product_type">தயாரிப்பு வகையைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="product_type_normal">வழக்கமான தயாரிப்பு (1 பிரிவு)</string>
+    <string name="product_type_two_section">ரெடி சிக்கன் போன்ற தயாரிப்பு (2 பிரிவுகள்)</string>
+    <string name="product_name_label">தயாரிப்பு பெயர்</string>
+    <string name="product_name_hint">எ.கா: மட்டன், நாட்டுக் கோழி</string>
+    <string name="cancel">ரத்துசெய்</string>
+    <string name="remove">நீக்கு</string>
+    <string name="remove_product">தயாரிப்பை நீக்கு</string>
+    <string name="remove_product_title">தயாரிப்பை நீக்கவா?</string>
+    <string name="remove_product_message">முகப்புத் திரையிலிருந்து \"%1$s\" ஐ நிச்சயமாக நீக்க விரும்புகிறீர்களா?\n\nஅனைத்து முந்தைய பதிவுகளும் முந்தைய தரவில் முற்றிலும் பாதுகாப்பாக இருக்கும்.</string>
+    <string name="default_product_cannot_remove">இயல்புநிலை நிரந்தர தயாரிப்புகளை நீக்க முடியாது.</string>
+    <string name="product_removed_format">\"%1$s\" செயலில் உள்ள தயாரிப்புகளிலிருந்து நீக்கப்பட்டது.</string>
+    <string name="product_remove_failed">தயாரிப்பை நீக்க முடியவில்லை.</string>
+    <string name="product_added_format">\"%1$s\" சேர்க்கப்பட்டது</string>
+    <string name="failed_add_product">தயாரிப்பைச் சேர்க்க முடியவில்லை</string>
+    <string name="error_product_name_empty">தயாரிப்பு பெயர் காலியாக இருக்கக்கூடாது.</string>
+    <string name="error_product_exists_format">\"%1$s\" என்ற பெயரில் செயலில் உள்ள தயாரிப்பு ஏற்கனவே உள்ளது.</string>
+
+    <!-- Options Menu -->
+    <string name="action_backup">டிரைவில் காப்புநகல் எடுக்கவும்</string>
+    <string name="action_restore">டிரைவிலிருந்து மீட்டமைக்கவும்</string>
+
+    <!-- First Setup / Onboarding -->
+    <string name="welcome">நல்வரவு</string>
+    <string name="terms_and_privacy_title">விதிகள் மற்றும் தனியுரிமை</string>
+    <string name="terms_privacy_consent">தொடர்வதன் மூலம், விதிமுறைகள் மற்றும் நிபந்தனைகளை ஏற்கிறீர்கள் மற்றும் தனியுரிமைக் கொள்கையை ஒப்புக்கொள்கிறீர்கள்.</string>
+    <string name="terms_and_conditions">விதிமுறைகள் மற்றும் நிபந்தனைகள்</string>
+    <string name="privacy_policy">தனியுரிமைக் கொள்கை</string>
+    <string name="accept">ஏற்கவும்</string>
+    <string name="decline">நிராகரி</string>
+    <string name="continue_button">தொடரவும்</string>
+    <string name="apply_button">பயன்படுத்து</string>
+    <string name="do_you_have_previous_data">உங்களிடம் முந்தைய தரவு உள்ளதா?</string>
+    <string name="restore_previous_data">முந்தைய தரவை மீட்டமைக்கவும்</string>
+    <string name="im_a_new_user">நான் ஒரு புதிய பயனர்</string>
+    <string name="protect_your_data_title">உங்கள் வணிகத் தரவைப் பாதுகாக்கவும்</string>
+    <string name="protect_your_data_message">உங்கள் தற்போதைய உள்ளூர் தரவை கிளவுடில் காப்புப் பிரதி எடுக்க Google மூலம் உள்நுழையவும். உங்கள் உள்ளூர் தரவு மாறாது.</string>
+    <string name="sign_in_and_backup">உள்நுழைந்து காப்புப் பிரதி எடுக்கவும்</string>
+    <string name="maybe_later">பிறகு பார்க்கலாம்</string>
+    <string name="initial_backup_completed">ஆரம்ப காப்புப்பிரதி முடிந்தது</string>
+    <string name="backup_failed_format">காப்புப்பிரதி தோல்வி: %1$s</string>
+    <string name="restore_success_format">மீட்டமைக்கப்பட்டது: %1$d பதிவுகள் (தவிர்க்கப்பட்டது: %2$d)</string>
+    <string name="no_previous_backup_found">முந்தைய காப்புப்பிரதி எதுவும் கிடைக்கவில்லை</string>
+    <string name="restore_failed_format">மீட்டமைத்தல் தோல்வி: %1$s</string>
+    <string name="unable_to_check_local_data">உள்ளூர் தரவைச் சரிபார்க்க முடியவில்லை: %1$s</string>
+    <string name="unable_to_check_backup_status">காப்புப்பிரதி நிலையைச் சரிபார்க்க முடியவில்லை</string>
+    <string name="unable_to_check_backup_message">Google Drive இல் முந்தைய காப்புப்பிரதி தரவு உள்ளதா என்பதைச் சரிபார்க்க முடியவில்லை.\n\nவிவரங்கள்: %1$s\n\nஉங்கள் இணைய இணைப்பைச் சரிபார்த்து மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="retry">மீண்டும் முயற்சி செய்க</string>
+    <string name="previous_data_found_title">முந்தைய தரவு கண்டறியப்பட்டது!</string>
+    <string name="previous_data_found_message">புதிய பயனராகத் தொடங்கினால் முந்தைய MeatMate வணிகத் தரவு நிரந்தரமாக நீக்கப்படும். உறுதிசெய்த பிறகு இந்தத் தரவை மீட்டெடுக்க முடியாது. தொடர விரும்புகிறீர்களா என்பதை உறுதிப்படுத்தவும்.</string>
+    <string name="continue_with_restore">மீட்டமைத்தலுடன் தொடரவும்</string>
+    <string name="delete_backup_and_start_new">காப்புப்பிரதியை நீக்கி புதிய பயனராகத் தொடங்குங்கள்</string>
+    <string name="final_confirmation_title">இறுதி உறுதிப்படுத்தல்</string>
+    <string name="final_confirmation_message">இந்தச் செயல் உங்கள் முந்தைய வணிகத் தரவை நிரந்தரமாக நீக்கும். புரிந்துகொண்டீர்கள் என்பதை உறுதிப்படுத்த, கீழே உள்ள சரியான வாக்கியத்தை உள்ளிடவும்.</string>
+    <string name="confirm_phrase_text">I am deleting my all data</string>
+    <string name="confirm_phrase_hint">சரியான வாக்கியத்தை இங்கே உள்ளிடவும்</string>
+    <string name="confirm_and_start_new">உறுதிசெய்து புதிய பயனராகத் தொடங்குங்கள்</string>
+    <string name="phrase_mismatch_error">வாக்கியம் பொருந்தவில்லை. சரியான வாக்கியத்தை உள்ளிடவும்.</string>
+    <string name="started_new_user">புதிய பயனர் தொடங்கப்பட்டது</string>
+    <string name="could_not_start_new_user">புதிய பயனரைத் தொடங்க முடியவில்லை: %1$s</string>
+
+    <!-- Settings -->
+    <string name="settings_title">அமைப்புகள்</string>
+    <string name="settings_profile">சுயவிவரம்</string>
+    <string name="settings_profile_desc">கணக்கு &amp; Google உள்நுழைவு</string>
+    <string name="settings_backup">காப்புநகல்</string>
+    <string name="settings_backup_desc">காப்புநகல் அமைப்புகள்</string>
+    <string name="settings_past_data">முந்தைய தரவு</string>
+    <string name="settings_past_data_desc">தேதி வாரியாக முந்தைய விற்பனை மற்றும் பதிவுகளைப் பார்க்கவும்</string>
+    <string name="settings_business_compliance">வணிக இணக்கம்</string>
+    <string name="settings_business_compliance_desc">வணிக இடம் மற்றும் இணக்கச் சோதனைகள்</string>
+    <string name="settings_language">மொழி / Language</string>
+    <string name="settings_language_desc">பயன்பாட்டின் காட்சி மொழியை மாற்றவும்</string>
+
+    <!-- Language Selection Screen -->
+    <string name="select_language_title">மொழியைத் தேர்ந்தெடுக்கவும் / Select Language</string>
+    <string name="select_language_subtitle">உங்கள் விருப்ப மொழியைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="lang_kannada">ಕನ್ನಡ (Kannada)</string>
+    <string name="lang_english">English</string>
+    <string name="lang_hindi">हिन्दी (Hindi)</string>
+    <string name="lang_tamil">தமிழ் (Tamil)</string>
+    <string name="lang_telugu">తెలుగు (Telugu)</string>
+    <string name="lang_urdu">اردو (Urdu)</string>
+    <string name="lang_kannada_translit">Kannada (English letters / Tooka, Bele...)</string>
+
+    <!-- Business Activity (Daily Entry) -->
+    <string name="enter_the_price">விலையை உள்ளிடவும்</string>
+    <string name="sl_no">வ.எண்</string>
+    <string name="weight">எடை</string>
+    <string name="total">மொத்தம்</string>
+    <string name="total_weight_format">மொத்த எடை: %s</string>
+    <string name="total_cash_format">மொத்த பணம்: %s</string>
+    <string name="total_weight_2_format">மொத்த எடை 2: %s</string>
+    <string name="total_cash_2_format">மொத்த பணம் 2: %s</string>
+    <string name="delete">நீக்கு</string>
+    <string name="delete_row_title">வரியை நீக்கவா?</string>
+    <string name="delete_row_message">இந்த வரியை நிச்சயமாக நீக்க விரும்புகிறீர்களா?</string>
+    <string name="yes">ஆம்</string>
+    <string name="no">இல்லை</string>
+
+    <!-- Calendar & Past Business -->
+    <string name="no_data_for_date">%1$s க்கு தரவு இல்லை</string>
+    <string name="no_data_for_product_on_date">%2$s அன்று %1$s க்கு தரவு இல்லை</string>
+    <string name="no_data">தரவு இல்லை</string>
+    <string name="price_format">விலை: %s</string>
+    <string name="this_is_not_today_data">இது இன்றைய தரவு அல்ல</string>
+    <string name="date_header">தேதி</string>
+    <string name="day_header">நாள்</string>
+    <string name="product_header">தயாரிப்பு</string>
+
+    <!-- Backup Activity -->
+    <string name="backup_now">இப்போது காப்புநகல் எடுக்கவும்</string>
+    <string name="data_to_backup_format">காப்புப் பிரதி எடுக்க வேண்டிய தரவு: %s</string>
+    <string name="data_to_backup_none">காப்புப் பிரதி எடுக்க வேண்டிய தரவு: -</string>
+    <string name="last_backup_format">கடைசி காப்புப்பிரதி: %s</string>
+    <string name="last_backup_never">கடைசி காப்புப்பிரதி: எப்போதும் இல்லை</string>
+    <string name="auto_backup">தானியங்கி காப்புநகல்</string>
+    <string name="save_auto_backup_setting">தானியங்கி காப்பு அமைப்பைச் சேமிக்கவும்</string>
+    <string name="auto_backup_saved">தானியங்கி காப்பு அமைப்பு சேமிக்கப்பட்டது</string>
+    <string name="not_signed_in">உள்நுழையவில்லை</string>
+    <string name="backup_exists_title">காப்புப்பிரதி ஏற்கனவே உள்ளது</string>
+    <string name="backup_exists_message">Google Drive இல் காப்புப்பிரதி கோப்பு ஏற்கனவே உள்ளது.\n\nஅதை தற்போதைய தரவுடன் மாற்ற விரும்புகிறீர்களா?</string>
+    <string name="replace">மாற்று</string>
+    <string name="auto_backup_off">ஆஃப்</string>
+    <string name="auto_backup_daily">தினசரி</string>
+    <string name="auto_backup_weekly">வாராந்திர</string>
+    <string name="auto_backup_custom">தனிப்பயன்</string>
+
+    <!-- Profile Activity -->
+    <string name="profile">சுயவிவரம்</string>
+    <string name="sign_in_change_account">உள்நுழைக / கணக்கை மாற்றவும்</string>
+
+    <!-- Add Information Activity (DontLicenseActivity) -->
+    <string name="add_info_title">தகவல் சேர்க்கவும்</string>
+    <string name="valid_license_question">உங்களிடம் தற்போது செல்லுபடியாகும் உரிமம் உள்ளதா?</string>
+    <string name="license_have">என்னிடம் உரிமம் உள்ளது</string>
+    <string name="license_no">என்னிடம் உரிமம் இல்லை</string>
+    <string name="license_unknown">எனக்குத் தெரியாது</string>
+    <string name="save_license_info">உரிமத் தகவலைச் சேமிக்கவும்</string>
+
+    <string name="valid_fssai_question">உங்களிடம் தற்போது செல்லுபடியாகும் FSSAI பதிவு/உரிமம் உள்ளதா?</string>
+    <string name="fssai_have">என்னிடம் FSSAI உள்ளது</string>
+    <string name="fssai_no">என்னிடம் FSSAI இல்லை</string>
+    <string name="fssai_unknown">எனக்குத் தெரியாது</string>
+    <string name="fssai_number_hint">FSSAI எண் (விருப்பத்தேர்வு)</string>
+    <string name="fssai_type_hint">FSSAI வகை/பிரிவு (விருப்பத்தேர்வு)</string>
+    <string name="fssai_expiry_hint">செல்லுபடியாகும் / காலாவதி தேதி (விருப்பத்தேர்வு)</string>
+
+    <string name="fssai_business_type_question">நீங்கள் எந்த வகையான கோழி/இறைச்சி வணிகத்தை நடத்துகிறீர்கள்?</string>
+    <string name="fssai_retail">கோழி/இறைச்சி சில்லறை விற்பனை</string>
+    <string name="fssai_slaughter">வளாகத்தில் கோழி அறுப்பு/டிரெஸ்ஸிங் செய்தல்</string>
+    <string name="fssai_processing">பதப்படுத்துதல்/மசாலா சேர்த்தல்/பிற தயாரிப்பு</string>
+    <string name="fssai_wholesale">மொத்த விற்பனை/விநியோகம்</string>
+    <string name="fssai_multiple">ஒன்றுக்கு மேற்பட்டவை</string>
+
+    <string name="fssai_turnover_question">தோராயமான வருடாந்திர விற்றுமுதல்</string>
+    <string name="fssai_turnover_1">₹1.5 கோடி வரை</string>
+    <string name="fssai_turnover_2">₹1.5 கோடி முதல் ₹50 கோடி வரை</string>
+    <string name="fssai_turnover_3">₹50 கோடிக்கு மேல்</string>
+
+    <string name="fssai_water_question">உணவு கையாளுதல் மற்றும் சுத்தம் செய்ய போதுமான குடிநீர் உள்ளதா?</string>
+    <string name="fssai_surface_question">வேலை செய்யும் தளங்கள் சுகாதாரமாக பராமரிக்கப்படுகிறதா?</string>
+    <string name="fssai_floor_question">தரை/சுவர்கள் சுத்தம் செய்யக்கூடியதாகவும் நல்ல நிலையிலும் உள்ளதா?</string>
+    <string name="fssai_waste_question">முறையான இறைச்சிக் கழிவு மேலாண்மை/அகற்றல் வசதி உள்ளதா?</string>
+    <string name="fssai_drainage_question">முறையான வடிகால்/கழிவுநீர் மேலாண்மை வசதி உள்ளதா?</string>
+    <string name="fssai_pest_question">வளாகம் பூச்சிகள் மற்றும் மாசுபாட்டிலிருந்து பாதுகாக்கப்படுகிறதா?</string>
+    <string name="fssai_slaughter_operation_question">அறுப்பு வளாகத்தில் செய்யப்பட்டால், செயல்பாடு சுகாதாரமாக ஏற்பாடு செய்யப்பட்டுள்ளதா?</string>
+    <string name="fssai_storage_question">இறைச்சி கையாளுதல் மற்றும் சேமிப்பு பகுதிகள் மாசுபாட்டைத் தடுக்க முறையாக அமைக்கப்பட்டுள்ளதா?</string>
+    <string name="fssai_noc_question">உள்ளாட்சி அமைப்பு/NOC தேவைக்கு ஏற்கனவே இணங்கப்பட்டுள்ளதா?</string>
+    <string name="noc_yes_available">ஆம்/கிடைக்கிறது</string>
+    <string name="noc_no_not_available">இல்லை/கிடைக்கவில்லை</string>
+    <string name="noc_not_applicable">பொருந்தாது/பொருத்தமானால்</string>
+    <string name="save_fssai_info">FSSAI தகவலைச் சேமிக்கவும்</string>
+
+    <string name="store_location_title">கடை இருப்பிடம்</string>
+    <string name="enter_automatically">தானாக உள்ளிடவும்</string>
+    <string name="fetching_address">முகவரி பெறப்படுகிறது...</string>
+    <string name="store_location_hint">முழு கடை இருப்பிடம்</string>
+    <string name="area_comes_under">பகுதி இதன் கீழ் வருகிறது</string>
+    <string name="gram_panchayat">கிராம பஞ்சாயத்து</string>
+    <string name="municipality">நகராட்சி</string>
+    <string name="road_width">சாலை அகலம்</string>
+    <string name="greater_than_40_ft">40 அடிக்கு மேல்</string>
+    <string name="less_than_40_ft">40 அடிக்கு கீழ்</string>
+    <string name="temple_zone">கோவில் மண்டலம்</string>
+    <string name="temple_within_50m">50 மீட்டருக்குள் கோவில் உள்ளது</string>
+    <string name="no_temple_within_50m">50 மீட்டருக்குள் கோவில் இல்லை</string>
+    <string name="school_zone">பள்ளி மண்டலம்</string>
+    <string name="school_within_100m">100 மீட்டருக்குள் பள்ளி உள்ளது</string>
+    <string name="no_school_within_100m">100 மீட்டருக்குள் பள்ளி இல்லை</string>
+    <string name="khata_status">காதா நிலை</string>
+    <string name="khata_a">ஏ-காதா</string>
+    <string name="khata_b">பி-காதா</string>
+    <string name="khata_none">காதா இல்லை</string>
+    <string name="neighbor_noc">அண்டை வீட்டாரின் NOC</string>
+    <string name="available">கிடைக்கிறது</string>
+    <string name="not_available">கிடைக்கவில்லை</string>
+    <string name="glazed_tiles_label">6 அடி வரை பளபளப்பான ஓடுகள்</string>
+    <string name="available_as_required">தேவைக்கேற்ப கிடைக்கிறது</string>
+    <string name="grease_trap">கிரீஸ் ட்ராப்</string>
+    <string name="black_glass_label">கருப்பு கண்ணாடி கதவு/மறைப்பு</string>
+    <string name="save_business_information">வணிகத் தகவலைச் சேமிக்கவும்</string>
+
+    <string name="prompt_select_license_status">உரிம நிலையைத் தேர்ந்தெடுக்கவும்.</string>
+    <string name="license_info_saved">உரிமத் தகவல் சேமிக்கப்பட்டது.</string>
+    <string name="prompt_select_fssai_status">FSSAI நிலையைத் தேர்ந்தெடுக்கவும்.</string>
+    <string name="prompt_complete_fssai_info">அனைத்து FSSAI தகவல்களையும் நிரப்பவும்.</string>
+    <string name="fssai_info_saved">FSSAI தகவல் சேமிக்கப்பட்டது.</string>
+    <string name="prompt_complete_business_info">அனைத்து வணிகத் தகவல்களையும் நிரப்பவும்.</string>
+    <string name="business_info_saved">வணிகத் தகவல் சேமிக்கப்பட்டது.</string>
+    <string name="location_permission_required">இருப்பிட அனுமதி தேவை.</string>
+    <string name="unable_to_get_location">தற்போதைய இருப்பிடத்தைப் பெற முடியவில்லை.</string>
+
+    <!-- Product Editing, Search & Safe Deletion -->
+    <string name="edit_product">தயாரிப்பைத் திருத்து</string>
+    <string name="edit_product_title">தயாரிப்பு பெயரைத் திருத்து</string>
+    <string name="edit_product_name_hint">புதிய தயாரிப்பு பெயரை உள்ளிடவும்</string>
+    <string name="save">சேமி</string>
+    <string name="product_renamed_format">தயாரிப்பு பெயர் \"%1$s\" என மாற்றப்பட்டது</string>
+    <string name="failed_rename_product">தயாரிப்பு பெயரை மாற்ற முடியவில்லை</string>
+    <string name="search_products_hint">தயாரிப்புகளைத் தேடுங்கள்...</string>
+    <string name="no_products_found">தயாரிப்புகள் எதுவும் கிடைக்கவில்லை</string>
+    <string name="delete_product">தயாரிப்பை நீக்கு</string>
+    <string name="delete_product_title">தயாரிப்பை நீக்கவா?</string>
+    <string name="delete_product_case_a_message">செயலில் உள்ள தயாரிப்புகளிலிருந்து \"%1$s\"-ஐ நீக்க நிச்சயமாக விரும்புகிறீர்களா?\n\nமுந்தைய அனைத்து பதிவுகளும் பாதுகாப்பாக இருக்கும் மற்றும் முந்தைய தரவுகளில் கிடைக்கும்.</string>
+    <string name="delete_product_case_b_message">எச்சரிக்கை: \"%1$s\"-க்கு இன்றைய பதிவுகள் உள்ளன.\n\nஇந்த தயாரிப்பின் இன்றைய பதிவுகள் மட்டுமே நிரந்தரமாக நீக்கப்படும். கடந்த கால பதிவுகள் அனைத்தும் முற்றிலும் பாதுகாப்பாக இருக்கும்.\n\nஉறுதிப்படுத்த கீழே உள்ள வாக்கியத்தை அப்படியே உள்ளிடவும்:</string>
+    <string name="delete_confirm_phrase">I am deleting</string>
+    <string name="delete_confirm_phrase_hint">இங்கே \"I am deleting\" என உள்ளிடவும்</string>
+    <string name="delete_phrase_mismatch">சரியான வாக்கியத்தை உள்ளிடவும்: I am deleting</string>
+    <string name="deleting">நீக்கப்படுகிறது...</string>
+    <string name="product_deleted_format">\"%1$s\" இன்றிலிருந்து நீக்கப்பட்டு காப்பகப்படுத்தப்பட்டது.</string>
+    <string name="no_data_for_selected_date">இந்த தேதிக்கான பதிவுகள் எதுவும் கிடைக்கவில்லை.</string>
+    <string name="more_options">கூடுதல் விருப்பங்கள்</string>
+
+    <!-- Feedback -->
+    <string name="settings_feedback">கருத்து</string>
+    <string name="settings_feedback_desc">உங்கள் பரிந்துரைகள் அல்லது சிக்கல்களைப் பகிரவும்</string>
+    <string name="send_email">மின்னஞ்சல் அனுப்பு</string>
+    <string name="send_feedback">கருத்து அனுப்பு</string>
+    <string name="feedback_hint">உங்கள் பரிந்துரையைப் பகிரவும் அல்லது சிக்கலைப் புகாரளிக்கவும்...</string>
+    <string name="feedback_empty_error">சமர்ப்பிக்கும் முன் உங்கள் கருத்தை உள்ளிடவும்.</string>
+    <string name="feedback_submitting">கருத்து அனுப்பப்படுகிறது...</string>
+    <string name="feedback_success_title">கருத்து அனுப்பப்பட்டது</string>
+    <string name="feedback_success_message">நன்றி! உங்கள் கருத்து வெற்றிகரமாக சமர்ப்பிக்கப்பட்டது.</string>
+    <string name="feedback_error_message">கருத்து அனுப்ப முடியவில்லை. இணைய இணைப்பைச் சரிபார்த்து மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="close">மூடு</string>
+
+    <!-- Logout -->
+    <string name="logout">வெளியேறு</string>
+    <string name="logout_warning_title">வெளியேறவா?</string>
+    <string name="logout_warning_message">வெளியேறுவது வணிகப் பதிவுகள், சேமிக்கப்பட்ட விலைகள், தயாரிப்பு பட்டியல் தரவு மற்றும் கணக்கு சார்ந்த அமைப்புகள் உட்பட இந்த Google கணக்குடன் தொடர்புடைய அனைத்து உள்ளூர் தரவையும் இந்தச் சாதனத்திலிருந்து நிரந்தரமாக நீக்கும். Google Drive இல் காப்புப் பிரதி எடுக்கப்படாத தரவு நிரந்தரமாக இழக்கப்படும். தொடர்வதற்கு முன் உங்கள் சமீபத்திய காப்புப் பிரதி முடிந்துவிட்டதா என்பதை உறுதிப்படுத்தவும்.</string>
+    <string name="logout_backup_and_logout">காப்புப் பிரதி எடுத்து வெளியேறு</string>
+    <string name="logout_anyway">இருப்பினும் வெளியேறு</string>
+    <string name="cleanup_failed_message">உள்ளூர் கணக்கு தரவை நீக்க முடியவில்லை. உங்கள் தரவைப் பாதுகாக்க வெளியேறுவது ரத்துசெய்யப்பட்டது.</string>
+    <string name="logout_dialog_title">வெளியேறவா?</string>
+    <string name="logout_dialog_message">நிச்சயமாக வெளியேற விரும்புகிறீர்களா?</string>
+    <string name="logout_confirm_backup_message">வெளியேறுவதற்கு முன் உங்கள் தரவை காப்புப் பிரதி எடுக்க விரும்புகிறீர்களா?</string>
+    <string name="logout_backup_data">தரவை காப்புப் பிரதி எடுக்கவும்</string>
+    <string name="skip">தவிர்</string>
+    <string name="backup_in_progress">தரவு காப்புப் பிரதி எடுக்கப்படுகிறது...</string>
+
+    <!-- Compliance Disclaimer -->
+    <string name="compliance_ai_disclaimer">நாங்கள் இந்த அம்சத்தில் பணியாற்றி வருகிறோம் மற்றும் இங்கே AI-ஐ இணைக்க திட்டமிட்டுள்ளோம். தயவுசெய்து அனைத்து தகவல்களும் சரியானவை என்று கருத வேண்டாம்.</string>
+
+    <!-- PDF Download -->
+    <string name="download_pdf">PDF பதிவிறக்கவும்</string>
+    <string name="pdf_generating">PDF உருவாக்கப்படுகிறது…</string>
+    <string name="pdf_success">PDF வெற்றிகரமாக சேமிக்கப்பட்டது</string>
+    <string name="no_records_for_pdf">இந்த தயாரிப்பு மற்றும் தேதிக்கு எந்த பதிவுகளும் கிடைக்கவில்லை</string>
+    <string name="view_pdf">PDF பார்க்கவும்</string>
+    <string name="share_pdf">PDF பகிரவும்</string>
+    <string name="pdf_saved_to">இங்கு சேமிக்கப்பட்டது: %1$s</string>
+</resources>

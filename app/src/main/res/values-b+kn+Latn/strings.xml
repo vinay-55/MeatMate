@@ -1,0 +1,280 @@
+<resources>
+    <string name="app_name">MeatMate</string>
+    <string name="store_management">Angadi Nirvahane</string>
+    <string name="welcome_to_meatmate">MeatMate ge Suswagatha</string>
+    <string name="select_product">Product aayke maadi</string>
+    <string name="add_product">Product serisi</string>
+    <string name="add_new_product">Hosa product serisi</string>
+    <string name="choose_product_type">Product type aayke maadi</string>
+    <string name="product_type_normal">Normal Product (1 Section)</string>
+    <string name="product_type_two_section">Ready Chicken thara Product (2 Sections)</string>
+    <string name="product_name_label">Product Hesaru</string>
+    <string name="product_name_hint">Udaharanegaagi: Mutton, Nati Koli</string>
+    <string name="cancel">Raddu maadi</string>
+    <string name="remove">Thegeduhaki</string>
+    <string name="remove_product">Product thegeduhaki</string>
+    <string name="remove_product_title">Product thegeduhakale?</string>
+    <string name="remove_product_message">Neevu \"%1$s\" annu home screen inda thegeduhakalu bayasuvira?\n\nEllaa records mathu data Hindina Mahiti yalli safe aagirutte.</string>
+    <string name="default_product_cannot_remove">Default permanent product galannu thegeyalu aaguvudilla.</string>
+    <string name="product_removed_format">\"%1$s\" active products inda thegeyalaagide.</string>
+    <string name="product_remove_failed">Product thegeyalu aagilla.</string>
+    <string name="product_added_format">\"%1$s\" serisalaagide</string>
+    <string name="failed_add_product">Product serisalu aagilla</string>
+    <string name="error_product_name_empty">Product hesaru khali irabaaradu.</string>
+    <string name="error_product_exists_format">\"%1$s\" hesarina active product eegagale ide.</string>
+
+    <!-- Options Menu -->
+    <string name="action_backup">Drive ge Backup maadi</string>
+    <string name="action_restore">Drive inda Restore maadi</string>
+
+    <!-- First Setup / Onboarding -->
+    <string name="welcome">Suswagatha</string>
+    <string name="terms_and_privacy_title">Terms &amp; Privacy</string>
+    <string name="terms_privacy_consent">Munduvarisuvudarinda, neevu Terms and Conditions oppikolluttheeri mathu Privacy Policy angikaristheeri.</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="accept">Oppikolli</string>
+    <string name="decline">Nirakarisi</string>
+    <string name="continue_button">Munduvarisi</string>
+    <string name="apply_button">Anvayisi</string>
+    <string name="do_you_have_previous_data">Nimma bali hindina data ideye?</string>
+    <string name="restore_previous_data">Hindina Data Restore maadi</string>
+    <string name="im_a_new_user">Naanu Hosa User</string>
+    <string name="protect_your_data_title">Nimma business data rakshisi</string>
+    <string name="protect_your_data_message">Nimma local data cloud ge backup madalu Google inda sign in maadi. Nimma local data badalaguvudilla.</string>
+    <string name="sign_in_and_backup">Sign in mathu Backup maadi</string>
+    <string name="maybe_later">Aamele nodona</string>
+    <string name="initial_backup_completed">Initial backup poornagondide</string>
+    <string name="backup_failed_format">Backup aagilla: %1$s</string>
+    <string name="restore_success_format">Restore aagide: %1$d records (skipped: %2$d)</string>
+    <string name="no_previous_backup_found">Yaavude hindina backup sikkilla</string>
+    <string name="restore_failed_format">Restore aagilla: %1$s</string>
+    <string name="unable_to_check_local_data">Local data check madalu aagilla: %1$s</string>
+    <string name="unable_to_check_backup_status">Backup status check madalu aagilla</string>
+    <string name="unable_to_check_backup_message">Google Drive nalli hindina backup data ideya endu verify madalu aagilla.\n\nVivara: %1$s\n\nDayavittu internet connection check maadi mathomme prayathnisi.</string>
+    <string name="retry">Maththe prayathnisi</string>
+    <string name="previous_data_found_title">Hindina Data Sikkide!</string>
+    <string name="previous_data_found_message">Neevu hosa user aagi start madidare nimma hindina MeatMate data delete aagutte. Nanthara ee datavannu restore madalu aaguvudilla. Dayavittu munduvarisalu bayasuvira endu confirm maadi.</string>
+    <string name="continue_with_restore">Restore jothe Munduvarisi</string>
+    <string name="delete_backup_and_start_new">Backup Delete maadi Hosa User aagi Start maadi</string>
+    <string name="final_confirmation_title">Anthima Confirm</string>
+    <string name="final_confirmation_message">Ee kramadinda nimma hindina MeatMate data poorthi delete aagutte. Neeravagi thilidukondiddiri endu confirm madalu, kelagina vakya enter maadi.</string>
+    <string name="confirm_phrase_text">I am deleting my all data</string>
+    <string name="confirm_phrase_hint">Ade vakyavannu illi enter maadi</string>
+    <string name="confirm_and_start_new">Confirm maadi &amp; Hosa User aagi Start maadi</string>
+    <string name="phrase_mismatch_error">Vakya match aagilla. Dayavittu exact vakya enter maadi.</string>
+    <string name="started_new_user">Hosa user aagi start aagide</string>
+    <string name="could_not_start_new_user">Hosa user start madalu aagilla: %1$s</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_profile">Profile</string>
+    <string name="settings_profile_desc">Account &amp; Google Sign-in</string>
+    <string name="settings_backup">Backup</string>
+    <string name="settings_backup_desc">Backup settings</string>
+    <string name="settings_past_data">Hindina Mahiti</string>
+    <string name="settings_past_data_desc">Dinankada prakara hindina sales mathu records nodi</string>
+    <string name="settings_business_compliance">Business Compliance</string>
+    <string name="settings_business_compliance_desc">Business location mathu compliance checks</string>
+    <string name="settings_language">Bhashe / Language</string>
+    <string name="settings_language_desc">App pradarshana bhashe badalayisi</string>
+
+    <!-- Language Selection Screen -->
+    <string name="select_language_title">Bhashe Aayke Maadi / Select Language</string>
+    <string name="select_language_subtitle">Nimma display bhasheyannu aayke maadi</string>
+    <string name="lang_kannada">ಕನ್ನಡ (Kannada)</string>
+    <string name="lang_english">English</string>
+    <string name="lang_hindi">हिन्दी (Hindi)</string>
+    <string name="lang_tamil">தமிழ் (Tamil)</string>
+    <string name="lang_telugu">తెలుగు (Telugu)</string>
+    <string name="lang_urdu">اردو (Urdu)</string>
+    <string name="lang_kannada_translit">Kannada (English letters / Tooka, Bele...)</string>
+
+    <!-- Business Activity (Daily Entry) -->
+    <string name="enter_the_price">Bele namoodisi</string>
+    <string name="sl_no">Sl</string>
+    <string name="weight">Tooka</string>
+    <string name="total">Ottu</string>
+    <string name="total_weight_format">Ottu Tooka: %s</string>
+    <string name="total_cash_format">Ottu Cash: %s</string>
+    <string name="total_weight_2_format">Ottu Tooka 2: %s</string>
+    <string name="total_cash_2_format">Ottu Cash 2: %s</string>
+    <string name="delete">Alisi</string>
+    <string name="delete_row_title">Row alisaloo?</string>
+    <string name="delete_row_message">Neevu ee row alisaloo bayasuvira?</string>
+    <string name="yes">Howdu</string>
+    <string name="no">Illa</string>
+
+    <!-- Calendar & Past Business -->
+    <string name="no_data_for_date">%1$s ge yaavude data illa</string>
+    <string name="no_data_for_product_on_date">%2$s randu %1$s ge yaavude data illa</string>
+    <string name="no_data">Yaavude data illa</string>
+    <string name="price_format">Bele: %s</string>
+    <string name="this_is_not_today_data">Idu indina data alla</string>
+    <string name="date_header">Dinanka</string>
+    <string name="day_header">Dina</string>
+    <string name="product_header">Product</string>
+
+    <!-- Backup Activity -->
+    <string name="backup_now">Eegale Backup maadi</string>
+    <string name="data_to_backup_format">Backup madabekada data: %s</string>
+    <string name="data_to_backup_none">Backup madabekada data: -</string>
+    <string name="last_backup_format">Koneya backup: %s</string>
+    <string name="last_backup_never">Koneya backup: Endu madilla</string>
+    <string name="auto_backup">Auto Backup</string>
+    <string name="save_auto_backup_setting">Auto Backup Setting Ulisi</string>
+    <string name="auto_backup_saved">Auto backup setting ulisalaagide</string>
+    <string name="not_signed_in">Sign in aagilla</string>
+    <string name="backup_exists_title">Backup eegagale ide</string>
+    <string name="backup_exists_message">Google Drive nalli backup file eegagale ide.\n\nAdannu hosa datadinda replace madalu bayasuvira?</string>
+    <string name="replace">Badalayisi</string>
+    <string name="auto_backup_off">Off</string>
+    <string name="auto_backup_daily">Prathidina</string>
+    <string name="auto_backup_weekly">Vaarakkomme</string>
+    <string name="auto_backup_custom">Custom</string>
+
+    <!-- Profile Activity -->
+    <string name="profile">Profile</string>
+    <string name="sign_in_change_account">Sign in / Account badalayisi</string>
+
+    <!-- Add Information Activity (DontLicenseActivity) -->
+    <string name="add_info_title">Mahiti Serisi</string>
+    <string name="valid_license_question">Prasthutha nimma bali valid license ideye?</string>
+    <string name="license_have">Nanna bali license ide</string>
+    <string name="license_no">Nanna bali license illa</string>
+    <string name="license_unknown">Nanage gothilla</string>
+    <string name="save_license_info">License Mahiti Ulisi</string>
+
+    <string name="valid_fssai_question">Nimma bali valid FSSAI registration/license ideye?</string>
+    <string name="fssai_have">Nanna bali FSSAI ide</string>
+    <string name="fssai_no">Nanna bali FSSAI illa</string>
+    <string name="fssai_unknown">Nanage gothilla</string>
+    <string name="fssai_number_hint">FSSAI number (optional)</string>
+    <string name="fssai_type_hint">FSSAI type/category (optional)</string>
+    <string name="fssai_expiry_hint">Validity / expiry date (optional)</string>
+
+    <string name="fssai_business_type_question">Neevu yaava reethiya koli/mamsa business maduttheeri?</string>
+    <string name="fssai_retail">Koli/mamsada retail marata</string>
+    <string name="fssai_slaughter">Dukanadalle koli vadhe/dressing maduvudu</string>
+    <string name="fssai_processing">Processing/marinating/ithara thayarike</string>
+    <string name="fssai_wholesale">Wholesale/supply</string>
+    <string name="fssai_multiple">Ondakkintha hecchu</string>
+
+    <string name="fssai_turnover_question">Andaju varshika turnover</string>
+    <string name="fssai_turnover_1">₹1.5 crore varege</string>
+    <string name="fssai_turnover_2">₹1.5 crore inda ₹50 crore varege</string>
+    <string name="fssai_turnover_3">₹50 crore gintha hecchu</string>
+
+    <string name="fssai_water_question">Food handling mathu clean madalu sooktha kudiye neeru ideye?</string>
+    <string name="fssai_surface_question">Food surfaces swaccha mathu cleanable aagideye?</string>
+    <string name="fssai_floor_question">Nelagalu/godegalu cleanable mathu channagi maintain aagideye?</string>
+    <string name="fssai_waste_question">Mamsada thyajya disposal vyavasthe ideye?</string>
+    <string name="fssai_drainage_question">Sooktha drainage/waste water management ideye?</string>
+    <string name="fssai_pest_question">Premises insects mathu heenu/keetagalinda rakshisalaagideye?</string>
+    <string name="fssai_slaughter_operation_question">Dukanadalle slaughtering maduvudare, adu hygienic aagi aagutthideye?</string>
+    <string name="fssai_storage_question">Mamsa handling mathu storage areas sookthavaagi manage aagideye?</string>
+    <string name="fssai_noc_question">Local body/NOC niyamagalannu paalisalaagideye?</string>
+    <string name="noc_yes_available">Howdu/labhyavide</string>
+    <string name="noc_no_not_available">Illa/labhyavilla</string>
+    <string name="noc_not_applicable">Anvayisuvudilla</string>
+    <string name="save_fssai_info">FSSAI Mahiti Ulisi</string>
+
+    <string name="store_location_title">Angadiya Sthala</string>
+    <string name="enter_automatically">Automatically Namoodisi</string>
+    <string name="fetching_address">Address padeyalaagutthide...</string>
+    <string name="store_location_hint">Poorna angadi sthala</string>
+    <string name="area_comes_under">Area idara kelage barutthe</string>
+    <string name="gram_panchayat">Gram Panchayat</string>
+    <string name="municipality">Municipality</string>
+    <string name="road_width">Rastheya agala</string>
+    <string name="greater_than_40_ft">40 ft gintha hecchu</string>
+    <string name="less_than_40_ft">40 ft gintha kadime</string>
+    <string name="temple_zone">Devalaya zone</string>
+    <string name="temple_within_50m">50 m olage devalaya ide</string>
+    <string name="no_temple_within_50m">50 m olage devalaya illa</string>
+    <string name="school_zone">Shale zone</string>
+    <string name="school_within_100m">100 m olage shale ide</string>
+    <string name="no_school_within_100m">100 m olage shale illa</string>
+    <string name="khata_status">Khata status</string>
+    <string name="khata_a">A-Khata</string>
+    <string name="khata_b">B-Khata</string>
+    <string name="khata_none">Khata illa</string>
+    <string name="neighbor_noc">Pakkadavara NOC</string>
+    <string name="available">Labhyavide</string>
+    <string name="not_available">Labhyavilla</string>
+    <string name="glazed_tiles_label">6 ft varege glazed tiles</string>
+    <string name="available_as_required">Bekagiruvantha labhyavide</string>
+    <string name="grease_trap">Grease trap</string>
+    <string name="black_glass_label">Black glass door/screening</string>
+    <string name="save_business_information">Vyapara Mahiti Ulisi</string>
+
+    <string name="prompt_select_license_status">Dayavittu license status aayke maadi.</string>
+    <string name="license_info_saved">License mahiti ulisalaagide.</string>
+    <string name="prompt_select_fssai_status">Dayavittu FSSAI status aayke maadi.</string>
+    <string name="prompt_complete_fssai_info">Dayavittu ellaa FSSAI mahiti poornagolisi.</string>
+    <string name="fssai_info_saved">FSSAI mahiti ulisalaagide.</string>
+    <string name="prompt_complete_business_info">Dayavittu ellaa business mahiti poornagolisi.</string>
+    <string name="business_info_saved">Business mahiti ulisalaagide.</string>
+    <string name="location_permission_required">Location permission aavashyaka.</string>
+    <string name="unable_to_get_location">Prasthutha location padeyalu aagilla.</string>
+
+    <!-- Product Editing, Search & Safe Deletion -->
+    <string name="edit_product">Product Edit Maadi</string>
+    <string name="edit_product_title">Product Hesaru Edit Maadi</string>
+    <string name="edit_product_name_hint">Hosa product hesaru daakhilisi</string>
+    <string name="save">Ulisi</string>
+    <string name="product_renamed_format">Product hesaru \"%1$s\" endu badalaayisalaagide</string>
+    <string name="failed_rename_product">Product hesaru badalaayisalu aagilla</string>
+    <string name="search_products_hint">Product huduki...</string>
+    <string name="no_products_found">Yaavude product sigalilla</string>
+    <string name="delete_product">Product Delete Maadi</string>
+    <string name="delete_product_title">Product thegeduhaakabekee?</string>
+    <string name="delete_product_case_a_message">Active products ninda \"%1$s\" thegeduhaakalu nimage nishchayave?\n\nHindina ellaa records surakshitavaagirutthade matthu Past Data dalli labhyavirutthade.</string>
+    <string name="delete_product_case_b_message">Eccharike: \"%1$s\" ge ivatthina records ive.\n\nEe product na ivatthina records maathra delete aagutthade. Hindina ellaa records sampoornavaagi surakshitavaagirutthade.\n\nConfirm maadalu, kelagina vaakya type maadi:</string>
+    <string name="delete_confirm_phrase">I am deleting</string>
+    <string name="delete_confirm_phrase_hint">Illi \"I am deleting\" endu type maadi</string>
+    <string name="delete_phrase_mismatch">Dayavittu correct phrase type maadi: I am deleting</string>
+    <string name="deleting">Delete aagutthide...</string>
+    <string name="product_deleted_format">\"%1$s\" ivatthininda delete aagide matthu archive aagide.</string>
+    <string name="no_data_for_selected_date">Ee dinakke yaavude records illa.</string>
+    <string name="more_options">Innu hecchina options</string>
+
+    <!-- Feedback -->
+    <string name="settings_feedback">Feedback / Suggestions</string>
+    <string name="settings_feedback_desc">Nimma salahegalu athava samasyegalannu hanchikolli</string>
+    <string name="send_email">Send Email</string>
+    <string name="send_feedback">Feedback Kaluhisi</string>
+    <string name="feedback_hint">Nimma salahe hanchikolli athava samasye report maadi...</string>
+    <string name="feedback_empty_error">Dayavittu feedback baradhu kaluhisi.</string>
+    <string name="feedback_submitting">Feedback kaluhisalaagutthe...</string>
+    <string name="feedback_success_title">Feedback Kaluhisalaagide</string>
+    <string name="feedback_success_message">Dhanyavaadagalu! Nimma feedback yashasviyaagi submit aagide.</string>
+    <string name="feedback_error_message">Feedback kaluhisalu aagilla. Internet check maadi punaha prayathnisi.</string>
+    <string name="close">Muchhi</string>
+
+    <!-- Logout -->
+    <string name="logout">Log Out</string>
+    <string name="logout_warning_title">Log out maadbeka?</string>
+    <string name="logout_warning_message">Logging out will permanently delete all local data associated with this Google account from this device, including business records, saved prices, product catalog data, and account-specific settings. Any data that has not been backed up to Google Drive will be permanently lost. Please ensure your latest backup is complete before continuing.</string>
+    <string name="logout_backup_and_logout">Back Up &amp; Logout</string>
+    <string name="logout_anyway">Logout Anyway</string>
+    <string name="cleanup_failed_message">Local data delete maadlaagilla. Nimma data safe aagiralu logout cancel aagide.</string>
+    <string name="logout_dialog_title">Log Out maadabekee?</string>
+    <string name="logout_dialog_message">Neevu nishchayavaagi log out maadalu bayasuviraa?</string>
+    <string name="logout_confirm_backup_message">Log out aaguvamunna data backup maadabeke?</string>
+    <string name="logout_backup_data">Back Up Data</string>
+    <string name="skip">Skip</string>
+    <string name="backup_in_progress">Data backup aagutthe...</string>
+
+    <!-- Compliance Disclaimer -->
+    <string name="compliance_ai_disclaimer">Naavu ee feature mele kelsa maaduttiddeve mattu illi AI connect maado plan ide. Dayavittu ella maahiti sariyagide anta bhaavisabedi.</string>
+
+    <!-- PDF Download -->
+    <string name="download_pdf">PDF Download maadi</string>
+    <string name="pdf_generating">PDF create aaguttide…</string>
+    <string name="pdf_success">PDF save aagide</string>
+    <string name="no_records_for_pdf">Ee product mathu dinakke yaavude record sikkilla</string>
+    <string name="view_pdf">PDF Nodi</string>
+    <string name="share_pdf">PDF Share maadi</string>
+    <string name="pdf_saved_to">Illi save aagide: %1$s</string>
+</resources>

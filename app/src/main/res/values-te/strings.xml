@@ -1,0 +1,280 @@
+<resources>
+    <string name="app_name">MeatMate</string>
+    <string name="store_management">దుకాణం నిర్వహణ</string>
+    <string name="welcome_to_meatmate">మీట్‌మేట్‌కి స్వాగతం</string>
+    <string name="select_product">ఒక ఉత్పత్తిని ఎంచుకోండి</string>
+    <string name="add_product">ఉత్పత్తిని జోడించండి</string>
+    <string name="add_new_product">కొత్త ఉత్పత్తిని జోడించండి</string>
+    <string name="choose_product_type">ఉత్పత్తి రకాన్ని ఎంచుకోండి</string>
+    <string name="product_type_normal">సాధారణ ఉత్పత్తి (1 విభాగం)</string>
+    <string name="product_type_two_section">రెడీ చికెన్ వంటి ఉత్పత్తి (2 విభాగాలు)</string>
+    <string name="product_name_label">ఉత్పత్తి పేరు</string>
+    <string name="product_name_hint">ఉదా: మటన్, నాటు కోడి</string>
+    <string name="cancel">రద్దు చేయండి</string>
+    <string name="remove">తొలగించు</string>
+    <string name="remove_product">ఉత్పత్తిని తొలగించండి</string>
+    <string name="remove_product_title">ఉత్పత్తిని తొలగించాలా?</string>
+    <string name="remove_product_message">మీరు ఖచ్చితంగా హోమ్ స్క్రీన్ నుండి \"%1$s\" ని తొలగించాలనుకుంటున్నారా?\n\nఅన్ని మునుపటి రికార్డులు మరియు డేటా మునుపటి డేటాలో పూర్తిగా సురక్షితంగా ఉంటాయి.</string>
+    <string name="default_product_cannot_remove">డిఫాల్ట్ శాశ్వత ఉత్పత్తులను తీసివేయలేరు.</string>
+    <string name="product_removed_format">\"%1$s\" క్రియాశీల ఉత్పత్తుల నుండి తీసివేయబడింది.</string>
+    <string name="product_remove_failed">ఉత్పత్తిని తొలగించడంలో విఫలమైంది.</string>
+    <string name="product_added_format">\"%1$s\" జోడించబడింది</string>
+    <string name="failed_add_product">ఉత్పత్తిని జోడించడంలో విఫలమైంది</string>
+    <string name="error_product_name_empty">ఉత్పత్తి పేరు ఖాళీగా ఉండకూడదు.</string>
+    <string name="error_product_exists_format">\"%1$s\" పేరుతో ఉన్న యాక్టివ్ ప్రొడక్ట్ ఇప్పటికే ఉంది.</string>
+
+    <!-- Options Menu -->
+    <string name="action_backup">డ్రైవ్‌కు బ్యాకప్ చేయండి</string>
+    <string name="action_restore">డ్రైవ్ నుండి పునరుద్ధరించండి</string>
+
+    <!-- First Setup / Onboarding -->
+    <string name="welcome">స్వాగతం</string>
+    <string name="terms_and_privacy_title">నిబంధనలు మరియు గోప్యత</string>
+    <string name="terms_privacy_consent">కొనసాగడం ద్వారా, మీరు నిబంధనలు మరియు షరతులను అంగీకరిస్తున్నారు మరియు గోప్యతా విధానాన్ని గుర్తించారు.</string>
+    <string name="terms_and_conditions">నిబంధనలు మరియు షరతులు</string>
+    <string name="privacy_policy">గోప్యతా విధానం</string>
+    <string name="accept">అంగీకరించు</string>
+    <string name="decline">తిరస్కరించు</string>
+    <string name="continue_button">కొనసాగించండి</string>
+    <string name="apply_button">వర్తింపజేయి</string>
+    <string name="do_you_have_previous_data">మీ వద్ద మునుపటి డేటా ఉందా?</string>
+    <string name="restore_previous_data">మునుపటి డేటాను పునరుద్ధరించండి</string>
+    <string name="im_a_new_user">నేను కొత్త వినియోగదారుని</string>
+    <string name="protect_your_data_title">మీ వ్యాపార డేటాను రక్షించుకోండి</string>
+    <string name="protect_your_data_message">మీ ప్రస్తుత స్థానిక డేటాను క్లౌడ్‌కు బ్యాకప్ చేయడానికి Googleతో సైన్ ఇన్ చేయండి. మీ స్థానిక డేటా మారదు.</string>
+    <string name="sign_in_and_backup">సైన్ ఇన్ చేసి బ్యాకప్ చేయండి</string>
+    <string name="maybe_later">తరువాత చూద్దాం</string>
+    <string name="initial_backup_completed">ప్రారంభ బ్యాకప్ పూర్తయింది</string>
+    <string name="backup_failed_format">బ్యాకప్ విఫలమైంది: %1$s</string>
+    <string name="restore_success_format">పునరుద్ధరించబడింది: %1$d రికార్డులు (దాటవేయబడినవి: %2$d)</string>
+    <string name="no_previous_backup_found">మునుపటి బ్యాకప్ ఏదీ కనుగొనబడలేదు</string>
+    <string name="restore_failed_format">పునరుద్ధరణ విఫలమైంది: %1$s</string>
+    <string name="unable_to_check_local_data">స్థానిక డేటాను తనిఖీ చేయడం సాధ్యపడలేదు: %1$s</string>
+    <string name="unable_to_check_backup_status">బ్యాకప్ స్థితిని తనిఖీ చేయడం సాధ్యపడలేదు</string>
+    <string name="unable_to_check_backup_message">Google Drive లో మునుపటి బ్యాకప్ ఉందో లేదో ధృవీకరించడం సాధ్యపడలేదు.\n\nవివరాలు: %1$s\n\nదయచేసి మీ ఇంటర్నెట్ కనెక్షన్‌ని తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="retry">మళ్లీ ప్రయత్నించండి</string>
+    <string name="previous_data_found_title">మునుపటి డేటా కనుగొనబడింది!</string>
+    <string name="previous_data_found_message">మీరు కొత్త వినియోగదారుగా ప్రారంభించాలనుకుంటే మీ మునుపటి MeatMate వ్యాపార డేటా శాశ్వతంగా తొలగించబడుతుంది. నిర్ధారించిన తర్వాత మీరు ఈ డేటాను పునరుద్ధరించలేరు. దయచేసి నిర్ధారించుకోండి.</string>
+    <string name="continue_with_restore">పునరుద్ధరణతో కొనసాగించండి</string>
+    <string name="delete_backup_and_start_new">బ్యాకప్‌ని తొలగించి కొత్త వినియోగదారుగా ప్రారంభించండి</string>
+    <string name="final_confirmation_title">తుది నిర్ధారణ</string>
+    <string name="final_confirmation_message">ఈ చర్య మీ మునుపటి వ్యాపార డేటాను శాశ్వతంగా తీసివేస్తుంది. అర్థం చేసుకున్నారని నిర్ధారించడానికి, క్రింద ఉన్న ఖచ్చితమైన వాక్యాన్ని నమోదు చేయండి.</string>
+    <string name="confirm_phrase_text">I am deleting my all data</string>
+    <string name="confirm_phrase_hint">ఖచ్చితమైన వాక్యాన్ని ఇక్కడ నమోదు చేయండి</string>
+    <string name="confirm_and_start_new">నిర్ధారించి కొత్త యూజర్‌గా ప్రారంభించండి</string>
+    <string name="phrase_mismatch_error">వాక్యం సరిపోలలేదు. దయచేసి ఖచ్చితమైన వాక్యాన్ని నమోదు చేయండి.</string>
+    <string name="started_new_user">కొత్త వినియోగదారు ప్రారంభించబడింది</string>
+    <string name="could_not_start_new_user">కొత్త వినియోగదారుని ప్రారంభించడం సాధ్యపడలేదు: %1$s</string>
+
+    <!-- Settings -->
+    <string name="settings_title">సెట్టింగ్‌లు</string>
+    <string name="settings_profile">ప్రొఫైల్</string>
+    <string name="settings_profile_desc">ఖాతా మరియు Google సైన్-ఇన్</string>
+    <string name="settings_backup">బ్యాకప్</string>
+    <string name="settings_backup_desc">బ్యాకప్ సెట్టింగ్‌లు</string>
+    <string name="settings_past_data">మునుపటి డేటా</string>
+    <string name="settings_past_data_desc">తేదీల వారీగా మునుపటి అమ్మకాలు మరియు రికార్డులను వీక్షించండి</string>
+    <string name="settings_business_compliance">వ్యాపార నిబంధనలు</string>
+    <string name="settings_business_compliance_desc">వ్యాపార స్థలం మరియు నిబంధనల తనిఖీలు</string>
+    <string name="settings_language">భాష / Language</string>
+    <string name="settings_language_desc">యాప్ ప్రదర్శన భాషను మార్చండి</string>
+
+    <!-- Language Selection Screen -->
+    <string name="select_language_title">భాషను ఎంచుకోండి / Select Language</string>
+    <string name="select_language_subtitle">మీ ప్రాధాన్య ప్రదర్శన భాషను ఎంచుకోండి</string>
+    <string name="lang_kannada">ಕನ್ನಡ (Kannada)</string>
+    <string name="lang_english">English</string>
+    <string name="lang_hindi">हिन्दी (Hindi)</string>
+    <string name="lang_tamil">தமிழ் (Tamil)</string>
+    <string name="lang_telugu">తెలుగు (Telugu)</string>
+    <string name="lang_urdu">اردو (Urdu)</string>
+    <string name="lang_kannada_translit">Kannada (English letters / Tooka, Bele...)</string>
+
+    <!-- Business Activity (Daily Entry) -->
+    <string name="enter_the_price">ధరను నమోదు చేయండి</string>
+    <string name="sl_no">వరుస సంఖ్య</string>
+    <string name="weight">బరువు</string>
+    <string name="total">మొత్తం</string>
+    <string name="total_weight_format">మొత్తం బరువు: %s</string>
+    <string name="total_cash_format">మొత్తం నగదు: %s</string>
+    <string name="total_weight_2_format">మొత్తం బరువు 2: %s</string>
+    <string name="total_cash_2_format">మొత్తం నగదు 2: %s</string>
+    <string name="delete">తొలగించు</string>
+    <string name="delete_row_title">వరుసను తొలగించాలా?</string>
+    <string name="delete_row_message">మీరు ఖచ్చితంగా ఈ వరుసను తొలగించాలనుకుంటున్నారా?</string>
+    <string name="yes">అవును</string>
+    <string name="no">కాదు</string>
+
+    <!-- Calendar & Past Business -->
+    <string name="no_data_for_date">%1$s కోసం డేటా లేదు</string>
+    <string name="no_data_for_product_on_date">%2$s న %1$s కోసం డేటా లేదు</string>
+    <string name="no_data">డేటా లేదు</string>
+    <string name="price_format">ధర: %s</string>
+    <string name="this_is_not_today_data">ఇది నేటి డేటా కాదు</string>
+    <string name="date_header">తేదీ</string>
+    <string name="day_header">రోజు</string>
+    <string name="product_header">ఉత్పత్తి</string>
+
+    <!-- Backup Activity -->
+    <string name="backup_now">ఇప్పుడే బ్యాకప్ చేయండి</string>
+    <string name="data_to_backup_format">బ్యాకప్ చేయాల్సిన డేటా: %s</string>
+    <string name="data_to_backup_none">బ్యాకప్ చేయాల్సిన డేటా: -</string>
+    <string name="last_backup_format">చివరి బ్యాకప్: %s</string>
+    <string name="last_backup_never">చివరి బ్యాకప్: ఎప్పుడూ లేదు</string>
+    <string name="auto_backup">ఆటో బ్యాకప్</string>
+    <string name="save_auto_backup_setting">ఆటో బ్యాకప్ సెట్టింగ్‌ను సేవ్ చేయండి</string>
+    <string name="auto_backup_saved">ఆటో బ్యాకప్ సెట్టింగ్ సేవ్ చేయబడింది</string>
+    <string name="not_signed_in">సైన్ ఇన్ చేయలేదు</string>
+    <string name="backup_exists_title">బ్యాకప్ ఇప్పటికే ఉంది</string>
+    <string name="backup_exists_message">Google Drive లో బ్యాకప్ ఫైల్ ఇప్పటికే ఉంది.\n\nమీరు ప్రస్తుత డేటాతో దాన్ని భర్తీ చేయాలనుకుంటున్నారా?</string>
+    <string name="replace">భర్తీ చేయండి</string>
+    <string name="auto_backup_off">ఆఫ్</string>
+    <string name="auto_backup_daily">ప్రతిరోజూ</string>
+    <string name="auto_backup_weekly">వారానికోసారి</string>
+    <string name="auto_backup_custom">అనుకూలమైనది</string>
+
+    <!-- Profile Activity -->
+    <string name="profile">ప్రొఫైల్</string>
+    <string name="sign_in_change_account">సైన్ ఇన్ / ఖాతా మార్చండి</string>
+
+    <!-- Add Information Activity (DontLicenseActivity) -->
+    <string name="add_info_title">సమాచారాన్ని జోడించండి</string>
+    <string name="valid_license_question">ప్రస్తుతం మీ వద్ద చెల్లుబాటు అయ్యే లైసెన్స్ ఉందా?</string>
+    <string name="license_have">నా దగ్గర లైసెన్స్ ఉంది</string>
+    <string name="license_no">నా దగ్గర లైసెన్స్ లేదు</string>
+    <string name="license_unknown">నాకు తెలియదు</string>
+    <string name="save_license_info">లైసెన్స్ సమాచారాన్ని సేవ్ చేయండి</string>
+
+    <string name="valid_fssai_question">మీ వద్ద చెల్లుబాటు అయ్యే FSSAI రిజిస్ట్రేషన్/లైసెన్స్ ఉందా?</string>
+    <string name="fssai_have">నా దగ్గర FSSAI ఉంది</string>
+    <string name="fssai_no">నా దగ్గర FSSAI లేదు</string>
+    <string name="fssai_unknown">నాకు తెలియదు</string>
+    <string name="fssai_number_hint">FSSAI నంబర్ (ఐచ్ఛికం)</string>
+    <string name="fssai_type_hint">FSSAI రకం/వర్గం (ఐచ్ఛికం)</string>
+    <string name="fssai_expiry_hint">చెల్లుబాటు / గడువు తేదీ (ఐచ్ఛికం)</string>
+
+    <string name="fssai_business_type_question">మీరు ఏ రకమైన చికెన్/మాంసం వ్యాపారాన్ని నిర్వహిస్తున్నారు?</string>
+    <string name="fssai_retail">చికెన్/మాంసం రిటైల్ అమ్మకం</string>
+    <string name="fssai_slaughter">ప్రాంగణంలో కోళ్ళను వధించడం/డ్రెస్సింగ్ చేయడం</string>
+    <string name="fssai_processing">ప్రాసెసింగ్/మారినేటింగ్/ఇతర తయారీ</string>
+    <string name="fssai_wholesale">టోకు/సరఫరా</string>
+    <string name="fssai_multiple">ఒకటి కంటే ఎక్కువ</string>
+
+    <string name="fssai_turnover_question">సుమారు వార్షిక టర్నోవర్</string>
+    <string name="fssai_turnover_1">₹1.5 కోట్ల వరకు</string>
+    <string name="fssai_turnover_2">₹1.5 కోట్ల నుండి ₹50 కోట్ల వరకు</string>
+    <string name="fssai_turnover_3">₹50 కోట్లకు పైగా</string>
+
+    <string name="fssai_water_question">ఆహార నిర్వహణ మరియు శుభ్రపరచడానికి అనువైన త్రాగునీరు అందుబాటులో ఉందా?</string>
+    <string name="fssai_surface_question">పని ఉపరితలాలు పరిశుభ్రంగా నిర్వహించబడుతున్నాయా?</string>
+    <string name="fssai_floor_question">నేల/గోడలు శుభ్రంగా మరియు మంచి స్థితిలో ఉన్నాయా?</string>
+    <string name="fssai_waste_question">సరైన మాంస వ్యర్థాల నిర్వహణ/పారవేయడం అందుబాటులో ఉందా?</string>
+    <string name="fssai_drainage_question">తగిన డ్రైనేజీ/మురుగునీటి నిర్వహణ అందుబాటులో ఉందా?</string>
+    <string name="fssai_pest_question">ప్రాంగణం కీటకాలు మరియు కాలుష్యం నుండి రక్షించబడిందా?</string>
+    <string name="fssai_slaughter_operation_question">ప్రాంగణంలో వధ చేస్తే, ప్రక్రియ పరిశుభ్రంగా అమర్చబడిందా?</string>
+    <string name="fssai_storage_question">కాలుష్యాన్ని నివారించడానికి మాంసం నిర్వహణ మరియు నిల్వ ప్రాంతాలు తగిన విధంగా ఏర్పాటు చేయబడ్డాయా?</string>
+    <string name="fssai_noc_question">స్థానిక సంస్థ/NOC అవసరాలు ఇప్పటికే పాటించబడ్డాయా?</string>
+    <string name="noc_yes_available">అవును/అందుబాటులో ఉంది</string>
+    <string name="noc_no_not_available">కాదు/అందుబాటులో లేదు</string>
+    <string name="noc_not_applicable">వర్తించదు/సముచితమైతే</string>
+    <string name="save_fssai_info">FSSAI సమాచారాన్ని సేవ్ చేయండి</string>
+
+    <string name="store_location_title">దుకాణం స్థానం</string>
+    <string name="enter_automatically">స్వయంచాలకంగా నమోదు చేయండి</string>
+    <string name="fetching_address">చిరునామా పొందబడుతోంది...</string>
+    <string name="store_location_hint">పూర్తి దుకాణం స్థానం</string>
+    <string name="area_comes_under">ప్రాంతం దీని పరిధిలోకి వస్తుంది</string>
+    <string name="gram_panchayat">గ్రామ పంచాయతీ</string>
+    <string name="municipality">మున్సిపాలిటీ</string>
+    <string name="road_width">రహదారి వెడల్పు</string>
+    <string name="greater_than_40_ft">40 అడుగుల కంటే ఎక్కువ</string>
+    <string name="less_than_40_ft">40 అడుగుల కంటే తక్కువ</string>
+    <string name="temple_zone">దేవాలయ జోన్</string>
+    <string name="temple_within_50m">50 మీటర్ల లోపల గుడి ఉంది</string>
+    <string name="no_temple_within_50m">50 మీటర్ల లోపల గుడి లేదు</string>
+    <string name="school_zone">పాఠశాల జోన్</string>
+    <string name="school_within_100m">100 మీటర్ల లోపల పాఠశాల ఉంది</string>
+    <string name="no_school_within_100m">100 మీటర్ల లోపల పాఠశాల లేదు</string>
+    <string name="khata_status">ఖాతా స్థితి</string>
+    <string name="khata_a">ఎ-ఖాతా</string>
+    <string name="khata_b">బి-ఖాతా</string>
+    <string name="khata_none">ఖాతా లేదు</string>
+    <string name="neighbor_noc">పొరుగువారి NOC</string>
+    <string name="available">అందుబాటులో ఉంది</string>
+    <string name="not_available">అందుబాటులో లేదు</string>
+    <string name="glazed_tiles_label">6 అడుగుల వరకు మెరుస్తున్న టైల్స్</string>
+    <string name="available_as_required">అవసరమైన విధంగా అందుబాటులో ఉంది</string>
+    <string name="grease_trap">గ్రీజ్ ట్రాప్</string>
+    <string name="black_glass_label">నలుపు గాజు తలుపు/స్క్రీనింగ్</string>
+    <string name="save_business_information">వ్యాపార సమాచారాన్ని సేవ్ చేయండి</string>
+
+    <string name="prompt_select_license_status">దయచేసి లైసెన్స్ స్థితిని ఎంచుకోండి.</string>
+    <string name="license_info_saved">లైసెన్స్ సమాచారం సేవ్ చేయబడింది.</string>
+    <string name="prompt_select_fssai_status">దయచేసి FSSAI స్థితిని ఎంచుకోండి.</string>
+    <string name="prompt_complete_fssai_info">దయచేసి అన్ని FSSAI సమాచారాన్ని పూర్తి చేయండి.</string>
+    <string name="fssai_info_saved">FSSAI సమాచారం సేవ్ చేయబడింది.</string>
+    <string name="prompt_complete_business_info">దయచేసి అన్ని వ్యాపార సమాచారాన్ని పూర్తి చేయండి.</string>
+    <string name="business_info_saved">వ్యాపార సమాచారం సేవ్ చేయబడింది.</string>
+    <string name="location_permission_required">లొకేషన్ అనుమతి అవసరం.</string>
+    <string name="unable_to_get_location">ప్రస్తుత లొకేషన్ పొందడం సాధ్యపడలేదు.</string>
+
+    <!-- Product Editing, Search & Safe Deletion -->
+    <string name="edit_product">ఉత్పత్తిని సవరించండి</string>
+    <string name="edit_product_title">ఉత్పత్తి పేరును సవరించండి</string>
+    <string name="edit_product_name_hint">కొత్త ఉత్పత్తి పేరును నమోదు చేయండి</string>
+    <string name="save">సేవ్ చేయండి</string>
+    <string name="product_renamed_format">ఉత్పత్తి పేరు \"%1$s\" గా మార్చబడింది</string>
+    <string name="failed_rename_product">ఉత్పత్తి పేరు మార్చడం విఫలమైంది</string>
+    <string name="search_products_hint">ఉత్పత్తులను శోధించండి...</string>
+    <string name="no_products_found">ఉత్పత్తులేవీ కనుగొనబడలేదు</string>
+    <string name="delete_product">ఉత్పత్తిని తొలగించండి</string>
+    <string name="delete_product_title">ఉత్పత్తిని తీసివేయాలా?</string>
+    <string name="delete_product_case_a_message">యాక్టివ్ ఉత్పత్తుల నుండి \"%1$s\"ని తీసివేయాలని మీరు ఖచ్చితంగా అనుకుంటున్నారా?\n\nగత రికార్డులన్నీ సురక్షితంగా ఉంటాయి మరియు గత డేటాలో అందుబాటులో ఉంటాయి.</string>
+    <string name="delete_product_case_b_message">హెచ్చరిక: \"%1$s\" కోసం నేటి రికార్డులు ఉన్నాయి.\n\nఈ ఉత్పత్తి యొక్క నేటి రికార్డులు మాత్రమే శాశ్వతంగా తొలగించబడతాయి. గత రికార్డులన్నీ పూర్తిగా సురక్షితంగా ఉంటాయి.\n\nధృవీకరించడానికి, క్రింది వాక్యాన్ని ఖచ్చితంగా టైప్ చేయండి:</string>
+    <string name="delete_confirm_phrase">I am deleting</string>
+    <string name="delete_confirm_phrase_hint">ఇక్కడ \"I am deleting\" అని టైప్ చేయండి</string>
+    <string name="delete_phrase_mismatch">దయచేసి ఖచ్చితమైన వాక్యాన్ని నమోదు చేయండి: I am deleting</string>
+    <string name="deleting">తొలగించబడుతోంది...</string>
+    <string name="product_deleted_format">\"%1$s\" నేటి నుండి తొలగించబడింది మరియు ఆర్కైవ్ చేయబడింది.</string>
+    <string name="no_data_for_selected_date">ఈ తేదీకి రికార్డులేవీ కనుగొనబడలేదు.</string>
+    <string name="more_options">మరిన్ని ఎంపికలు</string>
+
+    <!-- Feedback -->
+    <string name="settings_feedback">ఫీడ్‌బ్యాక్</string>
+    <string name="settings_feedback_desc">మీ సూచనలు లేదా సమస్యలను పంచుకోండి</string>
+    <string name="send_email">ఇమెయిల్ పంపండి</string>
+    <string name="send_feedback">ఫీడ్‌బ్యాక్ పంపండి</string>
+    <string name="feedback_hint">మీ సూచనను పంచుకోండి లేదా సమస్యను నివేదించండి...</string>
+    <string name="feedback_empty_error">సమర్పించే ముందు దయచేసి మీ ఫీడ్‌బ్యాక్‌ను నమోదు చేయండి.</string>
+    <string name="feedback_submitting">ఫీడ్‌బ్యాక్ పంపబడుతోంది...</string>
+    <string name="feedback_success_title">ఫీడ్‌బ్యాక్ పంపబడింది</string>
+    <string name="feedback_success_message">ధన్యవాదాలు! మీ ఫీడ్‌బ్యాక్ విజయవంతంగా సమర్పించబడింది.</string>
+    <string name="feedback_error_message">ఫీడ్‌బ్యాక్ పంపడం సాధ్యపడలేదు. దయచేసి ఇంటర్నెట్ తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="close">మూసివేయి</string>
+
+    <!-- Logout -->
+    <string name="logout">లాగ్ అవుట్</string>
+    <string name="logout_warning_title">లాగ్ అవుట్ చేయాలా?</string>
+    <string name="logout_warning_message">లాగ్ అవుట్ చేయడం వలన వ్యాపార రికార్డులు, సేవ్ చేసిన ధరలు, ఉత్పత్తి కేటలాగ్ డేటా మరియు ఖాతా సంబంధిత సెట్టింగ్‌లతో సహా ఈ Google ఖాతాతో అనుబంధించబడిన మొత్తం స్థానిక డేటా ఈ పరికరం నుండి శాశ్వతంగా తొలగించబడుతుంది. Google Drive లో బ్యాకప్ చేయని డేటా శాశ్వతంగా కోల్పోతారు. కొనసాగే ముందు దయచేసి మీ తాజా బ్యాకప్ పూర్తయిందని నిర్ధారించుకోండి.</string>
+    <string name="logout_backup_and_logout">బ్యాకప్ చేసి లాగ్ అవుట్ అవ్వండి</string>
+    <string name="logout_anyway">ఏదేమైనా లాగ్ అవుట్ అవ్వండి</string>
+    <string name="cleanup_failed_message">స్థానిక ఖాతా డేటాను తొలగించడం సాధ్యం కాలేదు. మీ డేటాను రక్షించడానికి లాగ్ అవుట్ రద్దు చేయబడింది.</string>
+    <string name="logout_dialog_title">లాగ్ అవుట్ చేయాలా?</string>
+    <string name="logout_dialog_message">మీరు ఖచ్చితంగా లాగ్ అవుట్ చేయాలనుకుంటున్నారా?</string>
+    <string name="logout_confirm_backup_message">లాగ్ అవుట్ చేయడానికి ముందు మీ డేటాను బ్యాకప్ చేయాలనుకుంటున్నారా?</string>
+    <string name="logout_backup_data">డేటాను బ్యాకప్ చేయండి</string>
+    <string name="skip">దాటవేయి</string>
+    <string name="backup_in_progress">డేటా బ్యాకప్ చేయబడుతోంది...</string>
+
+    <!-- Compliance Disclaimer -->
+    <string name="compliance_ai_disclaimer">మేము ఈ ఫీచర్‌పై పని చేస్తున్నాము మరియు ఇక్కడ AIని అనుసంధానించాలని యోచిస్తున్నాము. దయచేసి మొత్తం సమాచారం సరైనదని భావించవద్దు.</string>
+
+    <!-- PDF Download -->
+    <string name="download_pdf">PDF డౌన్‌లోడ్ చేయండి</string>
+    <string name="pdf_generating">PDF రూపొందించబడుతోంది…</string>
+    <string name="pdf_success">PDF విజయవంతంగా సేవ్ చేయబడింది</string>
+    <string name="no_records_for_pdf">ఈ ఉత్పత్తి మరియు తేదీకి ఎటువంటి రికార్డులు కనుగొనబడలేదు</string>
+    <string name="view_pdf">PDF చూడండి</string>
+    <string name="share_pdf">PDF భాగస్వామ్యం చేయండి</string>
+    <string name="pdf_saved_to">ఇక్కడ సేవ్ చేయబడింది: %1$s</string>
+</resources>
