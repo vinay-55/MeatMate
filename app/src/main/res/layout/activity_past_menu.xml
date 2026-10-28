@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:fitsSystemWindows="true"
     android:orientation="vertical"
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
-    android:paddingTop="48dp"
+    android:paddingTop="36dp"
     android:paddingBottom="24dp">
 
     <TextView
@@ -15,35 +17,88 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Date"
+        android:text="@string/date_header"
+        android:textColor="@color/color_text_primary"
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/pastProd1"
+    <!-- Conditional search bar: hidden when <= 5 products on date, visible when >= 6 -->
+    <LinearLayout
+        android:id="@+id/searchLayout"
         android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:layout_marginTop="45dp"
-        android:text="Broiler (ಬ್ರಾಯ್ಲರ್)"
-        android:textAllCaps="false"
-        android:textSize="17sp" />
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_search_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:visibility="gone">
 
-    <Button
-        android:id="@+id/pastProd2"
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:layout_marginTop="16dp"
-        android:text="Farm (ಮೊಟ್ಟೆ ಕೋಳಿ)"
-        android:textAllCaps="false"
-        android:textSize="17sp" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_search"
+            app:tint="@color/color_text_secondary" />
 
-    <Button
-        android:id="@+id/pastProd3"
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/search_products_hint"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/color_text_primary"
+            android:textColorHint="@color/color_text_tertiary"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/clearSearchButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cancel"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/ic_clear"
+            android:visibility="gone"
+            app:tint="@color/color_text_secondary" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/noResultsText"
         android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:layout_marginTop="16dp"
-        android:text="Ready Chicken"
-        android:textAllCaps="false"
-        android:textSize="17sp" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/no_products_found"
+        android:textColor="@color/color_text_secondary"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/noDataForDateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="@string/no_data_for_selected_date"
+        android:textColor="@color/color_text_secondary"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pastProductsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
 
 </LinearLayout>

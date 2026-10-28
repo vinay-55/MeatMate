@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
+    android:fitsSystemWindows="true"
     android:background="?android:attr/colorBackground">
 
     <LinearLayout
@@ -14,13 +15,28 @@
         android:paddingTop="20dp"
         android:paddingBottom="32dp">
 
+        <TextView
+            android:id="@+id/complianceDisclaimerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_compliance_disclaimer"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/compliance_ai_disclaimer"
+            android:textColor="@color/color_error"
+            android:textSize="12sp" />
+
         <!-- ================= LICENSE ================= -->
 
         <TextView
             android:id="@+id/licenseQuestionText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Do you currently have a valid license?"
+            android:text="@string/valid_license_question"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -35,19 +51,19 @@
                 android:id="@+id/rbLicenseHave"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="I have a license" />
+                android:text="@string/license_have" />
 
             <RadioButton
                 android:id="@+id/rbLicenseNo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="I don't have a license" />
+                android:text="@string/license_no" />
 
             <RadioButton
                 android:id="@+id/rbLicenseUnknown"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="I don't know" />
+                android:text="@string/license_unknown" />
 
         </RadioGroup>
 
@@ -56,7 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="Save License Information"
+            android:text="@string/save_license_info"
             android:textAllCaps="false" />
 
         <!-- ================= FSSAI ================= -->
@@ -66,7 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
-            android:text="Do you currently have a valid FSSAI registration/license?"
+            android:text="@string/valid_fssai_question"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -81,19 +97,19 @@
                 android:id="@+id/rbFssaiHave"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="I have FSSAI" />
+                android:text="@string/fssai_have" />
 
             <RadioButton
                 android:id="@+id/rbFssaiNo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="I don't have FSSAI" />
+                android:text="@string/fssai_no" />
 
             <RadioButton
                 android:id="@+id/rbFssaiUnknown"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="I don't know" />
+                android:text="@string/fssai_unknown" />
 
         </RadioGroup>
 
@@ -109,7 +125,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:hint="FSSAI number (optional)"
+                android:hint="@string/fssai_number_hint"
                 android:inputType="textCapCharacters" />
 
             <EditText
@@ -117,7 +133,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:hint="FSSAI type/category (optional)"
+                android:hint="@string/fssai_type_hint"
                 android:inputType="textCapWords" />
 
             <EditText
@@ -125,7 +141,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:hint="Validity / expiry date (optional)"
+                android:hint="@string/fssai_expiry_hint"
                 android:inputType="date" />
 
         </LinearLayout>
@@ -141,7 +157,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="What type of chicken/meat business do you operate?"
+                android:text="@string/fssai_business_type_question"
                 android:textStyle="bold" />
 
             <RadioGroup
@@ -154,37 +170,37 @@
                     android:id="@+id/rbFssaiRetail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Retail sale of chicken/meat" />
+                    android:text="@string/fssai_retail" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiSlaughter"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Slaughter/dressing chicken at the premises" />
+                    android:text="@string/fssai_slaughter" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiProcessing"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Processing/marinating/other preparation" />
+                    android:text="@string/fssai_processing" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiWholesale"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Wholesale/supply" />
+                    android:text="@string/fssai_wholesale" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiMultiple"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="More than one" />
+                    android:text="@string/fssai_multiple" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiBusinessUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
             </RadioGroup>
 
@@ -192,7 +208,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Approximate annual turnover"
+                android:text="@string/fssai_turnover_question"
                 android:textStyle="bold" />
 
             <RadioGroup
@@ -205,32 +221,32 @@
                     android:id="@+id/rbFssaiTurnover1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Up to ₹1.5 crore" />
+                    android:text="@string/fssai_turnover_1" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiTurnover2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Above ₹1.5 crore to ₹50 crore" />
+                    android:text="@string/fssai_turnover_2" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiTurnover3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Above ₹50 crore" />
+                    android:text="@string/fssai_turnover_3" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiTurnoverUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
             </RadioGroup>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Is suitable potable water available for food handling and cleaning?"
+                android:text="@string/fssai_water_question"
                 android:textStyle="bold" />
 
             <RadioGroup
@@ -243,19 +259,19 @@
                     android:id="@+id/rbFssaiWaterYes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Yes" />
+                    android:text="@string/yes" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiWaterNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="No" />
+                    android:text="@string/no" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiWaterUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
             </RadioGroup>
 
@@ -263,7 +279,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Are food-contact/work surfaces suitable, cleanable and hygienically maintained?"
+                android:text="@string/fssai_surface_question"
                 android:textStyle="bold" />
 
             <RadioGroup
@@ -276,19 +292,19 @@
                     android:id="@+id/rbFssaiSurfaceYes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Yes" />
+                    android:text="@string/yes" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiSurfaceNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="No" />
+                    android:text="@string/no" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiSurfaceUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
             </RadioGroup>
 
@@ -296,7 +312,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Are floors/walls and relevant premises surfaces suitably cleanable and maintained?"
+                android:text="@string/fssai_floor_question"
                 android:textStyle="bold" />
 
             <RadioGroup
@@ -309,19 +325,19 @@
                     android:id="@+id/rbFssaiFloorYes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Yes" />
+                    android:text="@string/yes" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiFloorNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="No" />
+                    android:text="@string/no" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiFloorUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
             </RadioGroup>
 
@@ -329,7 +345,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Is proper meat-waste handling/disposal available?"
+                android:text="@string/fssai_waste_question"
                 android:textStyle="bold" />
 
             <RadioGroup
@@ -342,19 +358,19 @@
                     android:id="@+id/rbFssaiWasteYes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Yes" />
+                    android:text="@string/yes" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiWasteNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="No" />
+                    android:text="@string/no" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiWasteUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
             </RadioGroup>
 
@@ -362,7 +378,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Is suitable drainage/wastewater management available?"
+                android:text="@string/fssai_drainage_question"
                 android:textStyle="bold" />
 
             <RadioGroup
@@ -375,26 +391,26 @@
                     android:id="@+id/rbFssaiDrainageYes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Yes" />
+                    android:text="@string/yes" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiDrainageNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="No" />
+                    android:text="@string/no" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiDrainageUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
             </RadioGroup>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Is the premises protected against pests/insects and contamination?"
+                android:text="@string/fssai_pest_question"
                 android:textStyle="bold" />
 
             <RadioGroup
@@ -407,19 +423,19 @@
                     android:id="@+id/rbFssaiPestYes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Yes" />
+                    android:text="@string/yes" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiPestNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="No" />
+                    android:text="@string/no" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiPestUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
             </RadioGroup>
 
@@ -427,7 +443,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="If slaughtering/dressing is done at the premises, is the operation arranged hygienically and appropriately?"
+                android:text="@string/fssai_slaughter_operation_question"
                 android:textStyle="bold" />
 
             <RadioGroup
@@ -440,25 +456,25 @@
                     android:id="@+id/rbFssaiSlaughterYes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Yes" />
+                    android:text="@string/yes" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiSlaughterNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="No" />
+                    android:text="@string/no" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiSlaughterUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiSlaughterN_a"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Not applicable" />
+                    android:text="@string/noc_not_applicable" />
 
             </RadioGroup>
 
@@ -466,7 +482,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Are meat handling, cleaning and storage areas appropriately arranged to prevent contamination?"
+                android:text="@string/fssai_storage_question"
                 android:textStyle="bold" />
 
             <RadioGroup
@@ -479,19 +495,19 @@
                     android:id="@+id/rbFssaiStorageYes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Yes" />
+                    android:text="@string/yes" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiStorageNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="No" />
+                    android:text="@string/no" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiStorageUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
             </RadioGroup>
 
@@ -499,7 +515,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Is any applicable local-body/NOC requirement already complied with?"
+                android:text="@string/fssai_noc_question"
                 android:textStyle="bold" />
 
             <RadioGroup
@@ -512,25 +528,25 @@
                     android:id="@+id/rbFssaiNocYes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Yes/available" />
+                    android:text="@string/noc_yes_available" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiNocNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="No/not available" />
+                    android:text="@string/noc_no_not_available" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiNocUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
                 <RadioButton
                     android:id="@+id/rbFssaiNocNa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Not applicable/if appropriate" />
+                    android:text="@string/noc_not_applicable" />
 
             </RadioGroup>
 
@@ -539,7 +555,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Save FSSAI Information"
+                android:text="@string/save_fssai_info"
                 android:textAllCaps="false" />
 
         </LinearLayout>
@@ -557,7 +573,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Store location"
+                android:text="@string/store_location_title"
                 android:textStyle="bold" />
 
             <Button
@@ -565,7 +581,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Enter Automatically"
+                android:text="@string/enter_automatically"
                 android:textAllCaps="false" />
 
             <EditText
@@ -574,7 +590,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:gravity="top"
-                android:hint="Full store location"
+                android:hint="@string/store_location_hint"
                 android:inputType="textCapSentences|textMultiLine"
                 android:minLines="2" />
 
@@ -582,7 +598,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Area comes under" />
+                android:text="@string/area_comes_under" />
 
             <RadioGroup
                 android:id="@+id/areaRadioGroup"
@@ -594,26 +610,26 @@
                     android:id="@+id/rbAreaPanchayat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Gram Panchayat" />
+                    android:text="@string/gram_panchayat" />
 
                 <RadioButton
                     android:id="@+id/rbAreaMunicipality"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Municipality" />
+                    android:text="@string/municipality" />
 
                 <RadioButton
                     android:id="@+id/rbAreaUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
             </RadioGroup>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:text="Road width" />
+                android:text="@string/road_width" />
 
             <RadioGroup
                 android:id="@+id/roadRadioGroup"
@@ -625,19 +641,19 @@
                     android:id="@+id/rbRoadGreater"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Greater than 40 ft" />
+                    android:text="@string/greater_than_40_ft" />
 
                 <RadioButton
                     android:id="@+id/rbRoadLess"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Less than 40 ft" />
+                    android:text="@string/less_than_40_ft" />
 
                 <RadioButton
                     android:id="@+id/rbRoadUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
             </RadioGroup>
 
@@ -645,7 +661,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:text="Temple zone" />
+                android:text="@string/temple_zone" />
 
             <RadioGroup
                 android:id="@+id/templeRadioGroup"
@@ -657,19 +673,19 @@
                     android:id="@+id/rbTempleYes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="There is a temple within 50 m" />
+                    android:text="@string/temple_within_50m" />
 
                 <RadioButton
                     android:id="@+id/rbTempleNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="There is no temple within 50 m" />
+                    android:text="@string/no_temple_within_50m" />
 
                 <RadioButton
                     android:id="@+id/rbTempleUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
             </RadioGroup>
 
@@ -677,7 +693,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:text="School zone" />
+                android:text="@string/school_zone" />
 
             <RadioGroup
                 android:id="@+id/schoolRadioGroup"
@@ -689,19 +705,19 @@
                     android:id="@+id/rbSchoolYes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="There is a school within 100 m" />
+                    android:text="@string/school_within_100m" />
 
                 <RadioButton
                     android:id="@+id/rbSchoolNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="There is no school within 100 m" />
+                    android:text="@string/no_school_within_100m" />
 
                 <RadioButton
                     android:id="@+id/rbSchoolUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
             </RadioGroup>
 
@@ -709,7 +725,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Khata status" />
+                android:text="@string/khata_status" />
 
             <RadioGroup
                 android:id="@+id/khataRadioGroup"
@@ -721,25 +737,25 @@
                     android:id="@+id/rbKhataA"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="A-Khata" />
+                    android:text="@string/khata_a" />
 
                 <RadioButton
                     android:id="@+id/rbKhataB"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="B-Khata" />
+                    android:text="@string/khata_b" />
 
                 <RadioButton
                     android:id="@+id/rbKhataNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="No Khata" />
+                    android:text="@string/khata_none" />
 
                 <RadioButton
                     android:id="@+id/rbKhataUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
             </RadioGroup>
 
@@ -747,7 +763,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Neighbor NOC" />
+                android:text="@string/neighbor_noc" />
 
             <RadioGroup
                 android:id="@+id/neighborNocRadioGroup"
@@ -759,19 +775,19 @@
                     android:id="@+id/rbNeighborYes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Available" />
+                    android:text="@string/available" />
 
                 <RadioButton
                     android:id="@+id/rbNeighborNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Not available" />
+                    android:text="@string/not_available" />
 
                 <RadioButton
                     android:id="@+id/rbNeighborUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
             </RadioGroup>
 
@@ -779,7 +795,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Glazed tiles up to 6 ft" />
+                android:text="@string/glazed_tiles_label" />
 
             <RadioGroup
                 android:id="@+id/glazedTilesRadioGroup"
@@ -791,19 +807,19 @@
                     android:id="@+id/rbGlazedYes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Available as required" />
+                    android:text="@string/available_as_required" />
 
                 <RadioButton
                     android:id="@+id/rbGlazedNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Not available" />
+                    android:text="@string/not_available" />
 
                 <RadioButton
                     android:id="@+id/rbGlazedUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
             </RadioGroup>
 
@@ -811,7 +827,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Grease trap" />
+                android:text="@string/grease_trap" />
 
             <RadioGroup
                 android:id="@+id/greaseTrapRadioGroup"
@@ -823,19 +839,19 @@
                     android:id="@+id/rbGreaseYes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Available" />
+                    android:text="@string/available" />
 
                 <RadioButton
                     android:id="@+id/rbGreaseNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Not available" />
+                    android:text="@string/not_available" />
 
                 <RadioButton
                     android:id="@+id/rbGreaseUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
             </RadioGroup>
 
@@ -843,7 +859,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Black glass door/screening" />
+                android:text="@string/black_glass_label" />
 
             <RadioGroup
                 android:id="@+id/blackGlassRadioGroup"
@@ -855,19 +871,19 @@
                     android:id="@+id/rbBlackGlassYes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Available" />
+                    android:text="@string/available" />
 
                 <RadioButton
                     android:id="@+id/rbBlackGlassNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Not available" />
+                    android:text="@string/not_available" />
 
                 <RadioButton
                     android:id="@+id/rbBlackGlassUnknown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I don't know" />
+                    android:text="@string/fssai_unknown" />
 
             </RadioGroup>
 
@@ -877,7 +893,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:enabled="false"
-                android:text="Save Business Information"
+                android:text="@string/save_business_information"
                 android:textAllCaps="false" />
 
         </LinearLayout>

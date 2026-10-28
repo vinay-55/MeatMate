@@ -1,85 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="8dp"
+    android:layout_marginBottom="6dp"
     android:gravity="center_vertical"
     android:orientation="horizontal">
 
     <!-- Sl No -->
-
     <EditText
         android:id="@+id/slNo"
         android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:layout_weight="0.8"
-        android:background="@android:drawable/editbox_background"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.85"
+        android:background="@drawable/bg_input_field"
         android:gravity="center"
-        android:hint="Sl"
+        android:hint="@string/sl_no"
         android:inputType="number"
-        android:maxLines="1"
+        android:minHeight="48dp"
         android:padding="4dp"
-        android:textColor="#000000"
-        android:textColorHint="#888888"
-        android:textSize="16sp" />
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:textColor="@color/color_text_primary"
+        android:textColorHint="@color/color_text_tertiary"
+        android:textSize="15sp" />
 
     <!-- Weight -->
-
     <EditText
         android:id="@+id/weight"
         android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="8dp"
-        android:layout_weight="1.4"
-        android:background="@android:drawable/editbox_background"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_weight="1.3"
+        android:background="@drawable/bg_input_field"
         android:gravity="center"
-        android:hint="Weight"
+        android:hint="@string/weight"
         android:inputType="numberDecimal"
-        android:maxLines="1"
+        android:minHeight="48dp"
         android:padding="4dp"
-        android:textColor="#000000"
-        android:textColorHint="#888888"
-        android:textSize="16sp" />
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:textColor="@color/color_text_primary"
+        android:textColorHint="@color/color_text_tertiary"
+        android:textSize="15sp" />
 
     <!-- Total -->
-
     <TextView
         android:id="@+id/totalprice"
         android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="8dp"
-        android:layout_weight="1.8"
-        android:background="@android:drawable/editbox_background"
-        android:ellipsize="end"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_weight="1.6"
+        android:background="@drawable/bg_input_field"
         android:gravity="center"
-        android:maxLines="1"
+        android:minHeight="48dp"
         android:padding="4dp"
-        android:text="Total"
-        android:textColor="#000000"
-        android:textSize="16sp" />
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text="@string/total"
+        android:textColor="@color/color_text_primary"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
     <!-- Three dots -->
-
     <ImageButton
         android:id="@+id/more"
         android:layout_width="48dp"
-        android:layout_height="56dp"
+        android:layout_height="48dp"
         android:layout_marginStart="4dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="More options"
-        android:src="@android:drawable/ic_menu_more" />
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_more_vert"
+        app:tint="@color/color_text_secondary" />
 
     <!-- Plus -->
-
     <Button
         android:id="@+id/plus"
-        android:layout_width="52dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="4dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="2dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
         android:padding="0dp"
         android:text="+"
-        android:textColor="#000000"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 </LinearLayout>
