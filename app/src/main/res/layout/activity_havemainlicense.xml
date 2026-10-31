@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:fillViewport="true">
 
     <LinearLayout
@@ -17,6 +18,22 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/complianceDisclaimerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_compliance_disclaimer"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/compliance_ai_disclaimer"
+            android:textColor="@color/color_error"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/appMessageText"
