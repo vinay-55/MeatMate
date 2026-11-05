@@ -286,8 +286,6 @@
     <string name="reauth_switch_explain_title">ಡೇಟಾವನ್ನು ಮತ್ತೊಂದು ಖಾತೆಗೆ ಸಂಪರ್ಕಿಸಿ</string>
     <string name="reauth_switch_explain_message">ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಸ್ಥಳೀಯ ದಾಖಲೆಗಳು %1$s ಖಾತೆಗೆ ಸಂಬಂಧಿಸಿವೆ.\n\nಈ ಸ್ಥಳೀಯ ಡೇಟಾಗೆ ನೀವು ಮತ್ತೊಂದು Google ಖಾತೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡುತ್ತಿದ್ದೀರಿ. ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಕ್ಲೌಡ್ ಡೇಟಾವನ್ನು ರಕ್ಷಿಸಲು, ಆ ಖಾತೆಯು ಈಗಾಗಲೇ Google Drive ನಲ್ಲಿ ಬ್ಯಾಕಪ್ ಹೊಂದಿದ್ದರೆ ಬದಲಾವಣೆಯನ್ನು ನಿರ್ಬಂಧಿಸಲಾಗುತ್ತದೆ.</string>
     <string name="btn_choose_google_account">Google ಖಾತೆ ಆಯ್ಕೆಮಾಡಿ</string>
-    <string name="reauth_reset_confirm_title">ಹೊಸ ಬಳಕೆದಾರರಾಗಿ ಪ್ರಾರಂಭಿಸಿ</string>
-    <string name="reauth_reset_confirm_message">ಹೊಸ ಬಳಕೆದಾರರಾಗಿ ಪ್ರಾರಂಭಿಸುವುದರಿಂದ %1$s ಖಾತೆಗೆ ಸಂಬಂಧಿಸಿದ ಬ್ಯಾಕಪ್ ಮಾಡದ ಪ್ರಸ್ತುತ ಸ್ಥಳೀಯ ಮೀಟ್‌ಮೇಟ್ ಡೇಟಾ ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಲ್ಪಡುತ್ತದೆ. ಈ ಕ್ರಿಯೆಯನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗುವುದಿಲ್ಲ. ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ Google Drive ಬ್ಯಾಕಪ್‌ಗಳು ಅಳಿಸಲ್ಪಡುವುದಿಲ್ಲ. ನೀವು ಮುಂದುವರಿಯಲು ಬಯಸುವಿರಾ?</string>
     <!-- Account Switching Alert Strings (Kannada) -->
     <string name="account_switch_dialog_title">ವಿಭಿನ್ನ Google ಖಾತೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಲಾಗಿದೆ</string>
     <string name="account_switch_dialog_message">ಮೂಲ ಖಾತೆ: %1$s\nಆಯ್ಕೆಮಾಡಿದ ಖಾತೆ: %2$s\n\nನೀವು ಮೂಲ ಖಾತೆಗಿಂತ ಭಿನ್ನವಾದ Google ಖಾತೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿದ್ದೀರಿ. ನೀವು ಹೇಗೆ ಮುಂದುವರಿಯಲು ಬಯಸುತ್ತೀರಿ?</string>
@@ -305,7 +303,8 @@
     <string name="btn_choose_original_account">ಮೂಲ ಖಾತೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
     <string name="btn_return_to_recovery">ಮರುಪ್ರಾಪ್ತಿ ಆಯ್ಕೆಗಳಿಗೆ ಹಿಂತಿರುಗಿ</string>
     <string name="reauth_identity_unresolvable">ಖಾತೆಯ ಗುರುತನ್ನು ವಿಶ್ವಾಸಾರ್ಹವಾಗಿ ಸ್ಥಾಪಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಸೈನ್ ಇನ್ ಮಾಡಲು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
-    <string name="reauth_option3_confirm_title">ಹೊಸ ಬಳಕೆದಾರರಾಗಿ ಪ್ರಾರಂಭಿಸುವುದೇ?</string>
-    <string name="reauth_option3_confirm_message">ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಸ್ಥಳೀಯ ಮೀಟ್‌ಮೇಟ್ ಡೇಟಾವನ್ನು ಬ್ಯಾಕಪ್ ಮಾಡಲಾಗಿಲ್ಲ ಮತ್ತು ಇದು ನಿಮ್ಮ ಹಿಂದಿನ Google ಖಾತೆಗೆ ಸೇರಿದೆ. ನೀವು ಮುಂದುವರಿದರೆ, ಈ ಸಾಧನದಲ್ಲಿರುವ ಎಲ್ಲಾ ಸ್ಥಳೀಯ ಮೀಟ್‌ಮೇಟ್ ಡೇಟಾವನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ನೀವು ಹೊಸ ಡೇಟಾಬೇಸ್‌ನೊಂದಿಗೆ ಪ್ರಾರಂಭಿಸುವಿರಿ. ಈ ಕ್ರಿಯೆಯನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗುವುದಿಲ್ಲ.</string>
+    <string name="reauth_start_new_confirm_title">ಹೊಸ ಬಳಕೆದಾರರಾಗಿ ಪ್ರಾರಂಭಿಸಿ</string>
+    <string name="reauth_start_new_confirm_message">ಹೊಸ ಬಳಕೆದಾರರಾಗಿ ಪ್ರಾರಂಭಿಸುವುದರಿಂದ ನಿಮ್ಮ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಸ್ಥಳೀಯ ಮೀಟ್‌ಮೇಟ್ ಡೇಟಾವನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಲಾಗುತ್ತದೆ. Google Drive ಗೆ ಈಗಾಗಲೇ ಬ್ಯಾಕಪ್ ಮಾಡಲಾದ ಡೇಟಾ ಮಾತ್ರ ಸುರಕ್ಷಿತವಾಗಿರುತ್ತದೆ. ಈ ಕ್ರಿಯೆಯನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗುವುದಿಲ್ಲ. ನೀವು ಖಚಿತವಾಗಿ ಮುಂದುವರಿಯಲು ಬಯಸುವಿರಾ?</string>
+    <string name="price_max_digits_alert">ಬೆಲೆಗಾಗಿ ನೀವು ಗರಿಷ್ಠ 15 ಅಂಕೆಗಳನ್ನು ನಮೂದಿಸಬಹುದು.</string>
     <string name="btn_proceed">ಮುಂದುವರಿಯಿರಿ</string>
 </resources>
